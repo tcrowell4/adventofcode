@@ -1,0 +1,193 @@
+from cStringIO import StringIO
+  file_str = StringIO()
+  for num in xrange(loop_count):
+    file_str.write(`num`)
+
+  return file_str.getvalue()
+
+import itertools
+values = [1, 2, 3]
+l = ['a','b','c','d','e']
+per = itertools.permutations(l)
+for val in per:
+    print(*val)
+
+
+>>> temp_str = "%r"%plain_str
+
+
+bad = [ab, cd, pq, xy]
+re.search(r'ab|cd|pq|xy',word)
+
+>>> re.search(r'^(\w+ \w+) (\d+,\d+) through (\d+,\d+)',x).group(0)
+'turn off 370,39 through 425,839'
+>>> re.search(r'^(\w+ \w+) (\d+,\d+) through (\d+,\d+)',x).group(1)
+'turn off'
+>>> re.search(r'^(\w+ \w+) (\d+,\d+) through (\d+,\d+)',x).group(2)
+'370,39'
+>>> re.search(r'^(\w+ \w+) (\d+,\d+) through (\d+,\d+)',x).group(3)
+'425,839'
+
+>>> re.search(r'^(\w+) (\d+,\d+) through (\d+,\d+)',y).group()
+'toggle 209,584 through 513,802'
+>>> re.search(r'^(\w+) (\d+,\d+) through (\d+,\d+)',y).group(1)
+'toggle'
+>>> re.search(r'^(\w+) (\d+,\d+) through (\d+,\d+)',y).group(2)
+'209,584'
+>>> re.search(r'^(\w+) (\d+,\d+) through (\d+,\d+)',y).group(3)
+'513,802'
+>>> re.search(r'^(\w+) (\d+,\d+) through (\d+,\d+)',y).group(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: no such group
+>>> y
+'toggle 209,584 through 513,802'
+
+Array Slicing
+
+>>> a2 = np.array([[10, 11, 12, 13, 14],
+...                [15, 16, 17, 18, 19],
+...                [20, 21, 22, 23, 24],
+...                [25, 26, 27, 28, 29]])
+    a2[from_row:to_row, from_col, to_col]
+>>> a2[2:4, 2:4] = 1
+>>> a2[2:4, 2:4]
+array([[1, 1],
+       [1, 1]])
+>>> a2
+array([[10, 11, 12, 13, 14],
+       [15, 16, 17, 18, 19],
+       [20, 21,  1,  1, 24],
+       [25, 26,  1,  1, 29]])
+>>> ax = a2[2:4, 2:4]
+>>> ax
+array([[1, 1],
+       [1, 1]])
+>>> ax = 3
+>>> a2
+array([[10, 11, 12, 13, 14],
+       [15, 16, 17, 18, 19],
+       [20, 21,  1,  1, 24],
+       [25, 26,  1,  1, 29]])
+>>> ax
+3
+>>> ax = a2[2:4, 2:4]
+>>> ax[:] = 3
+>>> ax
+array([[3, 3],
+       [3, 3]])
+>>> a2
+array([[10, 11, 12, 13, 14],
+       [15, 16, 17, 18, 19],
+       [20, 21,  3,  3, 24],
+       [25, 26,  3,  3, 29]])
+	   
+>>> a2[:,:] = False
+>>> a2
+array([[0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0]])
+
+>>> a2[2:4, 2:4] = True
+>>> a2
+array([[0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 1, 1, 0],
+       [0, 0, 1, 1, 0]])
+	   
+	   
+>>> zzz = np.empty((100,100), dtype=bool)
+>>> zzz
+array([[ True,  True,  True, ...,  True,  True,  True],
+       [ True,  True,  True, ...,  True,  True,  True],
+       [ True,  True,  True, ...,  True,  True,  True],
+       ...,
+       [False,  True,  True, ...,  True,  True,  True],
+       [ True,  True,  True, ..., False, False, False],
+       [ True, False, False, ...,  True,  True,  True]])
+>>> zzz = np.full((100,100), False)
+
+>>> zzz
+array([[False, False, False, ..., False, False, False],
+       [False, False, False, ..., False, False, False],
+       [False, False, False, ..., False, False, False],
+       ...,
+       [False, False, False, ..., False, False, False],
+       [False, False, False, ..., False, False, False],
+       [False, False, False, ..., False, False, False]])
+>>>
+	   
+>>> x = [True, True, True, True]
+>>> x[:] = [not y for y in x]
+>>> x
+[False, False, False, False]
+>>>	  
+
+>>> array1 = np.arange(16).reshape(4,4)
+>>> array1
+array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])
+>>> xa = array1[0:2, 1:3]
+>>> xa
+array([[1, 2],
+       [5, 6]])
+>>> xa = 0
+>>> xa
+0
+>>> array1
+array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])
+>>> array1[0:2, 1:3] = 55
+>>> array1
+array([[ 0, 55, 55,  3],
+       [ 4, 55, 55,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])
+>>> xa
+0
+>>> xa = array1[0:2, 1:3]
+>>> xa[:] = 0
+>>> xa
+array([[0, 0],
+       [0, 0]])
+>>> array1
+array([[ 0,  0,  0,  3],
+       [ 4,  0,  0,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])
+
+>>> array1
+array([[ 0,  0,  0,  3],
+       [ 4,  0,  0,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])
+
+====   This is NOT the same
+the first creates an empty array
+>>> array1[0:1,0:0]
+array([], shape=(1, 0), dtype=int32)
+>>> array1[0:1,:]
+array([[0, 0, 0, 3]])
+>>> array1[0:1,0:0]
+array([], shape=(1, 0), dtype=int32)	   
+
+==== how enumerate array and update fields.	   
+import numpy as np
+
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
+  arr[idx[0],idx[1]] = 10
+  
+print(arr)
+
+
+============
+with open('day7_input.txt') as f:
+    list(map(str.split, f))

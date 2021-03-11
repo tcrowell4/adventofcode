@@ -1,0 +1,48 @@
+#!/usr/bin/python
+# The performance with this one is tremendous as opposed to the others
+# The difference is changing the string to a list.  I would have to presume
+# that the difference between append and extend is that much better.
+
+import sys
+import re
+import json
+
+def pause():
+    programPause = input("Press the <ENTER> key to continue...")
+
+
+def go(lines, count):
+    for line in lines:
+        xline = [x for x in line]
+        print("\n*********", xline)
+        
+        for i in range(count):
+            if (i%5 == 0): 
+                print(">>  loopcount = {}  ".format( i ))
+            xline = looksay(xline)
+            #print("<<", len(xline), xline)
+        print('\n',len(xline))
+
+def get(file):
+ 
+    go(lines)
+
+    return
+
+
+def main():
+    with open("day12.json", "r") as read_file:
+        data = json.load(read_file)
+    print(type(data))
+    for v in data:
+        print(type(v))
+        print(v[0])
+    #print(data)
+    
+    sys.exit(1)
+
+    return
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,1350 @@
+PS C:\Users\tcrow\Documents\Src\Python\adventofcode\2015> py .\dict_comp.py
+===================[ Part 1 ]========================================
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F160>, 'lx', 'lx', ['lx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FA60>, 'lw', 'lv', ['lw', 'OR', 'lv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782040>, 'lc', '1', ['lc', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827820D0>, 'lb', 'la', ['lb', 'OR', 'la'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792430>, 'kh', '1', ['kh', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2D30>, 'kg', 'kf', ['kg', 'OR', 'kf'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA0D0>, 'jm', '1', ['jm', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789F70>, 'jl', 'jk', ['jl', 'OR', 'jk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E940>, 'ir', '1', ['ir', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DE50>, 'iq', 'ip', ['iq', 'OR', 'ip'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A21F0>, 'hw', '1', ['hw', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAC10>, 'hv', 'hu', ['hv', 'OR', 'hu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F550>, 'hb', '1', ['hb', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792EE0>, 'ha', 'gz', ['ha', 'OR', 'gz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E9D0>, 'gg', '1', ['gg', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827925E0>, 'gf', 'ge', ['gf', 'OR', 'ge'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DD30>, 'fl', '1', ['fl', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786CA0>, 'fk', 'fj', ['fk', 'OR', 'fj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789EE0>, 'eq', '1', ['eq', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786820>, 'ep', 'eo', ['ep', 'OR', 'eo'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796700>, 'dv', '1', ['dv', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5EE0>, 'du', 'dt', ['du', 'OR', 'dt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2700>, 'da', '1', ['da', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827890D0>, 'cz', 'cy', ['cz', 'OR', 'cy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827824C0>, 'cf', '1', ['cf', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EDC0>, 'ce', 'cd', ['ce', 'OR', 'cd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FDC0>, 'bk', '1', ['bk', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782820>, 'bj', 'bi', ['bj', 'OR', 'bi'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FD30>, 'ap', '1', ['ap', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A4C0>, 'ao', 'an', ['ao', 'OR', 'an'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A50D0>, 'u', '1', ['u', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F0D0>, 't', 's', ['t', 'OR', 's'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F700>, 'c', '1', ['c', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827929D0>, '0', '0', ['0'])
+c ['0'] 0
+t ['c', 'LSHIFT', '1'] 0
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792040>, '1', 'r', ['1', 'AND', 'r'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FC10>, 'o', 'q', ['o', 'AND', 'q'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796A60>, 'b', 'n', ['b', 'OR', 'n'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AACA0>, '1674', '1674', ['1674'])
+b ['1674'] 1674
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A940>, 'k', 'm', ['k', 'AND', 'm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E430>, 'd', 'j', ['d', 'OR', 'j'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA040>, 'b', '2', ['b', 'RSHIFT', '2'])
+d ['b', 'RSHIFT', '2'] 418
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA820>, 'g', 'i', ['g', 'AND', 'i'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782310>, 'e', 'f', ['e', 'OR', 'f'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA9D0>, 'b', '3', ['b', 'RSHIFT', '3'])
+e ['b', 'RSHIFT', '3'] 209
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5AF0>, 'b', '5', ['b', 'RSHIFT', '5'])
+f ['b', 'RSHIFT', '5'] 52
+g ['e', 'OR', 'f'] 245
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA3A0>, 'NOT', 'h', ['NOT', 'h'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792CA0>, 'e', 'f', ['e', 'AND', 'f'])
+h ['e', 'AND', 'f'] 16
+i ['NOT', 'h'] -17
+j ['g', 'AND', 'i'] 229
+k ['d', 'OR', 'j'] 487
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789A60>, 'NOT', 'l', ['NOT', 'l'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786670>, 'd', 'j', ['d', 'AND', 'j'])
+l ['d', 'AND', 'j'] 160
+m ['NOT', 'l'] -161
+n ['k', 'AND', 'm'] 327
+o ['b', 'OR', 'n'] 1999
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F9D0>, 'NOT', 'p', ['NOT', 'p'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796280>, 'b', 'n', ['b', 'AND', 'n'])
+p ['b', 'AND', 'n'] 2
+q ['NOT', 'p'] -3
+r ['o', 'AND', 'q'] 1997
+s ['1', 'AND', 'r'] 1
+u ['t', 'OR', 's'] 1
+ao ['u', 'LSHIFT', '1'] 2
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782160>, '1', 'am', ['1', 'AND', 'am'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AC10>, 'aj', 'al', ['aj', 'AND', 'al'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A3A0>, 'x', 'ai', ['x', 'OR', 'ai'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E3A0>, 'v', 'w', ['v', 'OR', 'w'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782C10>, 'b', '1', ['b', 'RSHIFT', '1'])
+v ['b', 'RSHIFT', '1'] 837
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789E50>, 's', '15', ['s', 'LSHIFT', '15'])
+w ['s', 'LSHIFT', '15'] 32768
+x ['v', 'OR', 'w'] 33605
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2550>, 'af', 'ah', ['af', 'AND', 'ah'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A51F0>, 'y', 'ae', ['y', 'OR', 'ae'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EA60>, 'x', '2', ['x', 'RSHIFT', '2'])
+y ['x', 'RSHIFT', '2'] 8401
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAD30>, 'ab', 'ad', ['ab', 'AND', 'ad'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792280>, 'z', 'aa', ['z', 'OR', 'aa'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278ECA0>, 'x', '3', ['x', 'RSHIFT', '3'])
+z ['x', 'RSHIFT', '3'] 4200
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DB80>, 'x', '5', ['x', 'RSHIFT', '5'])
+aa ['x', 'RSHIFT', '5'] 1050
+ab ['z', 'OR', 'aa'] 5242
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AADC0>, 'NOT', 'ac', ['NOT', 'ac'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AF70>, 'z', 'aa', ['z', 'AND', 'aa'])
+ac ['z', 'AND', 'aa'] 8
+ad ['NOT', 'ac'] -9
+ae ['ab', 'AND', 'ad'] 5234
+af ['y', 'OR', 'ae'] 13555
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5A60>, 'NOT', 'ag', ['NOT', 'ag'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAB80>, 'y', 'ae', ['y', 'AND', 'ae'])
+ag ['y', 'AND', 'ae'] 80
+ah ['NOT', 'ag'] -81
+ai ['af', 'AND', 'ah'] 13475
+aj ['x', 'OR', 'ai'] 47079
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D040>, 'NOT', 'ak', ['NOT', 'ak'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA550>, 'x', 'ai', ['x', 'AND', 'ai'])
+ak ['x', 'AND', 'ai'] 1
+al ['NOT', 'ak'] -2
+am ['aj', 'AND', 'al'] 47078
+an ['1', 'AND', 'am'] 0
+ap ['ao', 'OR', 'an'] 2
+bj ['ap', 'LSHIFT', '1'] 4
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F5E0>, '1', 'bh', ['1', 'AND', 'bh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782DC0>, 'be', 'bg', ['be', 'AND', 'bg'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796550>, 'as', 'bd', ['as', 'OR', 'bd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A040>, 'aq', 'ar', ['aq', 'OR', 'ar'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A5E0>, 'x', '1', ['x', 'RSHIFT', '1'])
+aq ['x', 'RSHIFT', '1'] 16802
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827891F0>, 'an', '15', ['an', 'LSHIFT', '15'])
+ar ['an', 'LSHIFT', '15'] 0
+as ['aq', 'OR', 'ar'] 16802
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2AF0>, 'ba', 'bc', ['ba', 'AND', 'bc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796DC0>, 'at', 'az', ['at', 'OR', 'az'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2430>, 'as', '2', ['as', 'RSHIFT', '2'])
+at ['as', 'RSHIFT', '2'] 4200
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E820>, 'aw', 'ay', ['aw', 'AND', 'ay'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D3A0>, 'au', 'av', ['au', 'OR', 'av'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789160>, 'as', '3', ['as', 'RSHIFT', '3'])
+au ['as', 'RSHIFT', '3'] 2100
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786040>, 'as', '5', ['as', 'RSHIFT', '5'])
+av ['as', 'RSHIFT', '5'] 525
+aw ['au', 'OR', 'av'] 2621
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F1F0>, 'NOT', 'ax', ['NOT', 'ax'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792940>, 'au', 'av', ['au', 'AND', 'av'])
+ax ['au', 'AND', 'av'] 4
+ay ['NOT', 'ax'] -5
+az ['aw', 'AND', 'ay'] 2617
+ba ['at', 'OR', 'az'] 6777
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EE50>, 'NOT', 'bb', ['NOT', 'bb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A310>, 'at', 'az', ['at', 'AND', 'az'])
+bb ['at', 'AND', 'az'] 40
+bc ['NOT', 'bb'] -41
+bd ['ba', 'AND', 'bc'] 6737
+be ['as', 'OR', 'bd'] 23539
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789DC0>, 'NOT', 'bf', ['NOT', 'bf'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786C10>, 'as', 'bd', ['as', 'AND', 'bd'])
+bf ['as', 'AND', 'bd'] 0
+bg ['NOT', 'bf'] -1
+bh ['be', 'AND', 'bg'] 23539
+bi ['1', 'AND', 'bh'] 1
+bk ['bj', 'OR', 'bi'] 5
+ce ['bk', 'LSHIFT', '1'] 10
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A280>, '1', 'cc', ['1', 'AND', 'cc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827898B0>, 'bz', 'cb', ['bz', 'AND', 'cb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AE50>, 'bn', 'by', ['bn', 'OR', 'by'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EB80>, 'bl', 'bm', ['bl', 'OR', 'bm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796160>, 'as', '1', ['as', 'RSHIFT', '1'])
+bl ['as', 'RSHIFT', '1'] 8401
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792310>, 'bi', '15', ['bi', 'LSHIFT', '15'])
+bm ['bi', 'LSHIFT', '15'] 32768
+bn ['bl', 'OR', 'bm'] 41169
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5040>, 'bv', 'bx', ['bv', 'AND', 'bx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA1F0>, 'bo', 'bu', ['bo', 'OR', 'bu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8276BDC0>, 'bn', '2', ['bn', 'RSHIFT', '2'])
+bo ['bn', 'RSHIFT', '2'] 10292
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E280>, 'br', 'bt', ['br', 'AND', 'bt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789700>, 'bp', 'bq', ['bp', 'OR', 'bq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A1F0>, 'bn', '3', ['bn', 'RSHIFT', '3'])
+bp ['bn', 'RSHIFT', '3'] 5146
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A9D0>, 'bn', '5', ['bn', 'RSHIFT', '5'])
+bq ['bn', 'RSHIFT', '5'] 1286
+br ['bp', 'OR', 'bq'] 5406
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827829D0>, 'NOT', 'bs', ['NOT', 'bs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792C10>, 'bp', 'bq', ['bp', 'AND', 'bq'])
+bs ['bp', 'AND', 'bq'] 1026
+bt ['NOT', 'bs'] -1027
+bu ['br', 'AND', 'bt'] 4380
+bv ['bo', 'OR', 'bu'] 14652
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F8B0>, 'NOT', 'bw', ['NOT', 'bw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA5E0>, 'bo', 'bu', ['bo', 'AND', 'bu'])
+bw ['bo', 'AND', 'bu'] 20
+bx ['NOT', 'bw'] -21
+by ['bv', 'AND', 'bx'] 14632
+bz ['bn', 'OR', 'by'] 47609
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2F70>, 'NOT', 'ca', ['NOT', 'ca'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5280>, 'bn', 'by', ['bn', 'AND', 'by'])
+ca ['bn', 'AND', 'by'] 8192
+cb ['NOT', 'ca'] -8193
+cc ['bz', 'AND', 'cb'] 39417
+cd ['1', 'AND', 'cc'] 1
+cf ['ce', 'OR', 'cd'] 11
+cz ['cf', 'LSHIFT', '1'] 22
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F4C0>, '1', 'cx', ['1', 'AND', 'cx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D0D0>, 'cu', 'cw', ['cu', 'AND', 'cw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F940>, 'ci', 'ct', ['ci', 'OR', 'ct'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827924C0>, 'cg', 'ch', ['cg', 'OR', 'ch'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782550>, 'bn', '1', ['bn', 'RSHIFT', '1'])
+cg ['bn', 'RSHIFT', '1'] 20584
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279ACA0>, 'cd', '15', ['cd', 'LSHIFT', '15'])
+ch ['cd', 'LSHIFT', '15'] 32768
+ci ['cg', 'OR', 'ch'] 53352
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5D30>, 'cq', 'cs', ['cq', 'AND', 'cs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8276BF70>, 'cj', 'cp', ['cj', 'OR', 'cp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827964C0>, 'ci', '2', ['ci', 'RSHIFT', '2'])
+cj ['ci', 'RSHIFT', '2'] 13338
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5160>, 'cm', 'co', ['cm', 'AND', 'co'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A20D0>, 'ck', 'cl', ['ck', 'OR', 'cl'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796D30>, 'ci', '3', ['ci', 'RSHIFT', '3'])
+ck ['ci', 'RSHIFT', '3'] 6669
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2280>, 'ci', '5', ['ci', 'RSHIFT', '5'])
+cl ['ci', 'RSHIFT', '5'] 1667
+cm ['ck', 'OR', 'cl'] 7823
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E310>, 'NOT', 'cn', ['NOT', 'cn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782790>, 'ck', 'cl', ['ck', 'AND', 'cl'])
+cn ['ck', 'AND', 'cl'] 513
+co ['NOT', 'cn'] -514
+cp ['cm', 'AND', 'co'] 7310
+cq ['cj', 'OR', 'cp'] 15518
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5B80>, 'NOT', 'cr', ['NOT', 'cr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827963A0>, 'cj', 'cp', ['cj', 'AND', 'cp'])
+cr ['cj', 'AND', 'cp'] 5130
+cs ['NOT', 'cr'] -5131
+ct ['cq', 'AND', 'cs'] 10388
+cu ['ci', 'OR', 'ct'] 63740
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5700>, 'NOT', 'cv', ['NOT', 'cv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D4C0>, 'ci', 'ct', ['ci', 'AND', 'ct'])
+cv ['ci', 'AND', 'ct'] 0
+cw ['NOT', 'cv'] -1
+cx ['cu', 'AND', 'cw'] 63740
+cy ['1', 'AND', 'cx'] 0
+da ['cz', 'OR', 'cy'] 22
+du ['da', 'LSHIFT', '1'] 44
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A25E0>, '1', 'ds', ['1', 'AND', 'ds'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA940>, 'dp', 'dr', ['dp', 'AND', 'dr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5670>, 'dd', 'do', ['dd', 'OR', 'do'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EAF0>, 'db', 'dc', ['db', 'OR', 'dc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782430>, 'ci', '1', ['ci', 'RSHIFT', '1'])
+db ['ci', 'RSHIFT', '1'] 26676
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796C10>, 'cy', '15', ['cy', 'LSHIFT', '15'])
+dc ['cy', 'LSHIFT', '15'] 0
+dd ['db', 'OR', 'dc'] 26676
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796430>, 'dl', 'dn', ['dl', 'AND', 'dn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D310>, 'de', 'dk', ['de', 'OR', 'dk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792700>, 'dd', '2', ['dd', 'RSHIFT', '2'])
+de ['dd', 'RSHIFT', '2'] 6669
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FCA0>, 'dh', 'dj', ['dh', 'AND', 'dj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DA60>, 'df', 'dg', ['df', 'OR', 'dg'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A160>, 'dd', '3', ['dd', 'RSHIFT', '3'])
+df ['dd', 'RSHIFT', '3'] 3334
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A23A0>, 'dd', '5', ['dd', 'RSHIFT', '5'])
+dg ['dd', 'RSHIFT', '5'] 833
+dh ['df', 'OR', 'dg'] 3911
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789B80>, 'NOT', 'di', ['NOT', 'di'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A820>, 'df', 'dg', ['df', 'AND', 'dg'])
+di ['df', 'AND', 'dg'] 256
+dj ['NOT', 'di'] -257
+dk ['dh', 'AND', 'dj'] 3655
+dl ['de', 'OR', 'dk'] 7759
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786AF0>, 'NOT', 'dm', ['NOT', 'dm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D940>, 'de', 'dk', ['de', 'AND', 'dk'])
+dm ['de', 'AND', 'dk'] 2565
+dn ['NOT', 'dm'] -2566
+do ['dl', 'AND', 'dn'] 5194
+dp ['dd', 'OR', 'do'] 31870
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA160>, 'NOT', 'dq', ['NOT', 'dq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5F70>, 'dd', 'do', ['dd', 'AND', 'do'])
+dq ['dd', 'AND', 'do'] 0
+dr ['NOT', 'dq'] -1
+ds ['dp', 'AND', 'dr'] 31870
+dt ['1', 'AND', 'ds'] 0
+dv ['du', 'OR', 'dt'] 44
+ep ['dv', 'LSHIFT', '1'] 88
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827921F0>, '1', 'en', ['1', 'AND', 'en'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827863A0>, 'ek', 'em', ['ek', 'AND', 'em'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F430>, 'dy', 'ej', ['dy', 'OR', 'ej'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786D30>, 'dw', 'dx', ['dw', 'OR', 'dx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5820>, 'dd', '1', ['dd', 'RSHIFT', '1'])
+dw ['dd', 'RSHIFT', '1'] 13338
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AAF0>, 'dt', '15', ['dt', 'LSHIFT', '15'])
+dx ['dt', 'LSHIFT', '15'] 0
+dy ['dw', 'OR', 'dx'] 13338
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786A60>, 'eg', 'ei', ['eg', 'AND', 'ei'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E0D0>, 'dz', 'ef', ['dz', 'OR', 'ef'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D1F0>, 'dy', '2', ['dy', 'RSHIFT', '2'])
+dz ['dy', 'RSHIFT', '2'] 3334
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786E50>, 'ec', 'ee', ['ec', 'AND', 'ee'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789940>, 'ea', 'eb', ['ea', 'OR', 'eb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A550>, 'dy', '3', ['dy', 'RSHIFT', '3'])
+ea ['dy', 'RSHIFT', '3'] 1667
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D550>, 'dy', '5', ['dy', 'RSHIFT', '5'])
+eb ['dy', 'RSHIFT', '5'] 416
+ec ['ea', 'OR', 'eb'] 1955
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E670>, 'NOT', 'ed', ['NOT', 'ed'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F790>, 'ea', 'eb', ['ea', 'AND', 'eb'])
+ed ['ea', 'AND', 'eb'] 128
+ee ['NOT', 'ed'] -129
+ef ['ec', 'AND', 'ee'] 1827
+eg ['dz', 'OR', 'ef'] 3879
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796F70>, 'NOT', 'eh', ['NOT', 'eh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789550>, 'dz', 'ef', ['dz', 'AND', 'ef'])
+eh ['dz', 'AND', 'ef'] 1282
+ei ['NOT', 'eh'] -1283
+ej ['eg', 'AND', 'ei'] 2597
+ek ['dy', 'OR', 'ej'] 15935
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2040>, 'NOT', 'el', ['NOT', 'el'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A54C0>, 'dy', 'ej', ['dy', 'AND', 'ej'])
+el ['dy', 'AND', 'ej'] 0
+em ['NOT', 'el'] -1
+en ['ek', 'AND', 'em'] 15935
+eo ['1', 'AND', 'en'] 1
+eq ['ep', 'OR', 'eo'] 89
+fk ['eq', 'LSHIFT', '1'] 178
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789310>, '1', 'fi', ['1', 'AND', 'fi'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E8B0>, 'ff', 'fh', ['ff', 'AND', 'fh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E790>, 'et', 'fe', ['et', 'OR', 'fe'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2E50>, 'er', 'es', ['er', 'OR', 'es'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792F70>, 'dy', '1', ['dy', 'RSHIFT', '1'])
+er ['dy', 'RSHIFT', '1'] 6669
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A29D0>, 'eo', '15', ['eo', 'LSHIFT', '15'])
+es ['eo', 'LSHIFT', '15'] 32768
+et ['er', 'OR', 'es'] 39437
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792160>, 'fb', 'fd', ['fb', 'AND', 'fd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D670>, 'eu', 'fa', ['eu', 'OR', 'fa'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2CA0>, 'et', '2', ['et', 'RSHIFT', '2'])
+eu ['et', 'RSHIFT', '2'] 9859
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D9D0>, 'ex', 'ez', ['ex', 'AND', 'ez'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A55E0>, 'ev', 'ew', ['ev', 'OR', 'ew'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2160>, 'et', '3', ['et', 'RSHIFT', '3'])
+ev ['et', 'RSHIFT', '3'] 4929
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792B80>, 'et', '5', ['et', 'RSHIFT', '5'])
+ew ['et', 'RSHIFT', '5'] 1232
+ex ['ev', 'OR', 'ew'] 6097
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786940>, 'NOT', 'ey', ['NOT', 'ey'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2A60>, 'ev', 'ew', ['ev', 'AND', 'ew'])
+ey ['ev', 'AND', 'ew'] 64
+ez ['NOT', 'ey'] -65
+fa ['ex', 'AND', 'ez'] 6033
+fb ['eu', 'OR', 'fa'] 14227
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DF70>, 'NOT', 'fc', ['NOT', 'fc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A670>, 'eu', 'fa', ['eu', 'AND', 'fa'])
+fc ['eu', 'AND', 'fa'] 1665
+fd ['NOT', 'fc'] -1666
+fe ['fb', 'AND', 'fd'] 12562
+ff ['et', 'OR', 'fe'] 47903
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796940>, 'NOT', 'fg', ['NOT', 'fg'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827825E0>, 'et', 'fe', ['et', 'AND', 'fe'])
+fg ['et', 'AND', 'fe'] 4096
+fh ['NOT', 'fg'] -4097
+fi ['ff', 'AND', 'fh'] 43807
+fj ['1', 'AND', 'fi'] 1
+fl ['fk', 'OR', 'fj'] 179
+gf ['fl', 'LSHIFT', '1'] 358
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E4C0>, '1', 'gd', ['1', 'AND', 'gd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782E50>, 'ga', 'gc', ['ga', 'AND', 'gc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F040>, 'fo', 'fz', ['fo', 'OR', 'fz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827860D0>, 'fm', 'fn', ['fm', 'OR', 'fn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786700>, 'et', '1', ['et', 'RSHIFT', '1'])
+fm ['et', 'RSHIFT', '1'] 19718
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789280>, 'fj', '15', ['fj', 'LSHIFT', '15'])
+fn ['fj', 'LSHIFT', '15'] 32768
+fo ['fm', 'OR', 'fn'] 52486
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827920D0>, 'fw', 'fy', ['fw', 'AND', 'fy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FB80>, 'fp', 'fv', ['fp', 'OR', 'fv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2EE0>, 'fo', '2', ['fo', 'RSHIFT', '2'])
+fp ['fo', 'RSHIFT', '2'] 13121
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2790>, 'fs', 'fu', ['fs', 'AND', 'fu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5430>, 'fq', 'fr', ['fq', 'OR', 'fr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8276BEE0>, 'fo', '3', ['fo', 'RSHIFT', '3'])
+fq ['fo', 'RSHIFT', '3'] 6560
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782D30>, 'fo', '5', ['fo', 'RSHIFT', '5'])
+fr ['fo', 'RSHIFT', '5'] 1640
+fs ['fq', 'OR', 'fr'] 8168
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786430>, 'NOT', 'ft', ['NOT', 'ft'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786EE0>, 'fq', 'fr', ['fq', 'AND', 'fr'])
+ft ['fq', 'AND', 'fr'] 32
+fu ['NOT', 'ft'] -33
+fv ['fs', 'AND', 'fu'] 8136
+fw ['fp', 'OR', 'fv'] 16329
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A8B0>, 'NOT', 'fx', ['NOT', 'fx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2B80>, 'fp', 'fv', ['fp', 'AND', 'fv'])
+fx ['fp', 'AND', 'fv'] 4928
+fy ['NOT', 'fx'] -4929
+fz ['fw', 'AND', 'fy'] 11401
+ga ['fo', 'OR', 'fz'] 60815
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EF70>, 'NOT', 'gb', ['NOT', 'gb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D790>, 'fo', 'fz', ['fo', 'AND', 'fz'])
+gb ['fo', 'AND', 'fz'] 3072
+gc ['NOT', 'gb'] -3073
+gd ['ga', 'AND', 'gc'] 57743
+ge ['1', 'AND', 'gd'] 1
+gg ['gf', 'OR', 'ge'] 359
+ha ['gg', 'LSHIFT', '1'] 718
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E160>, '1', 'gy', ['1', 'AND', 'gy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA4C0>, 'gv', 'gx', ['gv', 'AND', 'gx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796820>, 'gj', 'gu', ['gj', 'OR', 'gu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FEE0>, 'gh', 'gi', ['gh', 'OR', 'gi'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789820>, 'fo', '1', ['fo', 'RSHIFT', '1'])
+gh ['fo', 'RSHIFT', '1'] 26243
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827965E0>, 'ge', '15', ['ge', 'LSHIFT', '15'])
+gi ['ge', 'LSHIFT', '15'] 32768
+gj ['gh', 'OR', 'gi'] 59011
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5790>, 'gr', 'gt', ['gr', 'AND', 'gt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA280>, 'gk', 'gq', ['gk', 'OR', 'gq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792670>, 'gj', '2', ['gj', 'RSHIFT', '2'])
+gk ['gj', 'RSHIFT', '2'] 14752
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827821F0>, 'gn', 'gp', ['gn', 'AND', 'gp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAAF0>, 'gl', 'gm', ['gl', 'OR', 'gm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D700>, 'gj', '3', ['gj', 'RSHIFT', '3'])
+gl ['gj', 'RSHIFT', '3'] 7376
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA790>, 'gj', '5', ['gj', 'RSHIFT', '5'])
+gm ['gj', 'RSHIFT', '5'] 1844
+gn ['gl', 'OR', 'gm'] 8180
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E5E0>, 'NOT', 'go', ['NOT', 'go'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAA60>, 'gl', 'gm', ['gl', 'AND', 'gm'])
+go ['gl', 'AND', 'gm'] 1040
+gp ['NOT', 'go'] -1041
+gq ['gn', 'AND', 'gp'] 7140
+gr ['gk', 'OR', 'gq'] 15332
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789790>, 'NOT', 'gs', ['NOT', 'gs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA8B0>, 'gk', 'gq', ['gk', 'AND', 'gq'])
+gs ['gk', 'AND', 'gq'] 6560
+gt ['NOT', 'gs'] -6561
+gu ['gr', 'AND', 'gt'] 8772
+gv ['gj', 'OR', 'gu'] 59079
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A58B0>, 'NOT', 'gw', ['NOT', 'gw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827865E0>, 'gj', 'gu', ['gj', 'AND', 'gu'])
+gw ['gj', 'AND', 'gu'] 8704
+gx ['NOT', 'gw'] -8705
+gy ['gv', 'AND', 'gx'] 50375
+gz ['1', 'AND', 'gy'] 1
+hb ['ha', 'OR', 'gz'] 719
+hv ['hb', 'LSHIFT', '1'] 1438
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAE50>, '1', 'ht', ['1', 'AND', 'ht'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA670>, 'hq', 'hs', ['hq', 'AND', 'hs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA310>, 'he', 'hp', ['he', 'OR', 'hp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AD30>, 'hc', 'hd', ['hc', 'OR', 'hd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827828B0>, 'gj', '1', ['gj', 'RSHIFT', '1'])
+hc ['gj', 'RSHIFT', '1'] 29505
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796B80>, 'gz', '15', ['gz', 'LSHIFT', '15'])
+hd ['gz', 'LSHIFT', '15'] 32768
+he ['hc', 'OR', 'hd'] 62273
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786160>, 'hm', 'ho', ['hm', 'AND', 'ho'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782EE0>, 'hf', 'hl', ['hf', 'OR', 'hl'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F280>, 'he', '2', ['he', 'RSHIFT', '2'])
+hf ['he', 'RSHIFT', '2'] 15568
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EEE0>, 'hi', 'hk', ['hi', 'AND', 'hk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827923A0>, 'hg', 'hh', ['hg', 'OR', 'hh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279ADC0>, 'he', '3', ['he', 'RSHIFT', '3'])
+hg ['he', 'RSHIFT', '3'] 7784
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827968B0>, 'he', '5', ['he', 'RSHIFT', '5'])
+hh ['he', 'RSHIFT', '5'] 1946
+hi ['hg', 'OR', 'hh'] 8186
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DC10>, 'NOT', 'hj', ['NOT', 'hj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827969D0>, 'hg', 'hh', ['hg', 'AND', 'hh'])
+hj ['hg', 'AND', 'hh'] 1544
+hk ['NOT', 'hj'] -1545
+hl ['hi', 'AND', 'hk'] 6642
+hm ['hf', 'OR', 'hl'] 15858
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAEE0>, 'NOT', 'hn', ['NOT', 'hn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA430>, 'hf', 'hl', ['hf', 'AND', 'hl'])
+hn ['hf', 'AND', 'hl'] 6352
+ho ['NOT', 'hn'] -6353
+hp ['hm', 'AND', 'ho'] 9506
+hq ['he', 'OR', 'hp'] 63331
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827960D0>, 'NOT', 'hr', ['NOT', 'hr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792A60>, 'he', 'hp', ['he', 'AND', 'hp'])
+hr ['he', 'AND', 'hp'] 8448
+hs ['NOT', 'hr'] -8449
+ht ['hq', 'AND', 'hs'] 54883
+hu ['1', 'AND', 'ht'] 1
+hw ['hv', 'OR', 'hu'] 1439
+iq ['hw', 'LSHIFT', '1'] 2878
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A59D0>, '1', 'io', ['1', 'AND', 'io'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5DC0>, 'il', 'in', ['il', 'AND', 'in'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782B80>, 'hz', 'ik', ['hz', 'OR', 'ik'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D5E0>, 'hx', 'hy', ['hx', 'OR', 'hy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827893A0>, 'he', '1', ['he', 'RSHIFT', '1'])
+hx ['he', 'RSHIFT', '1'] 31136
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DDC0>, 'hu', '15', ['hu', 'LSHIFT', '15'])
+hy ['hu', 'LSHIFT', '15'] 32768
+hz ['hx', 'OR', 'hy'] 63904
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F670>, 'ih', 'ij', ['ih', 'AND', 'ij'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E550>, 'ia', 'ig', ['ia', 'OR', 'ig'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AB80>, 'hz', '2', ['hz', 'RSHIFT', '2'])
+ia ['hz', 'RSHIFT', '2'] 15976
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792AF0>, 'id', 'if', ['id', 'AND', 'if'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827895E0>, 'ib', 'ic', ['ib', 'OR', 'ic'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789AF0>, 'hz', '3', ['hz', 'RSHIFT', '3'])
+ib ['hz', 'RSHIFT', '3'] 7988
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796670>, 'hz', '5', ['hz', 'RSHIFT', '5'])
+ic ['hz', 'RSHIFT', '5'] 1997
+id ['ib', 'OR', 'ic'] 8189
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D160>, 'NOT', 'ie', ['NOT', 'ie'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EC10>, 'ib', 'ic', ['ib', 'AND', 'ic'])
+ie ['ib', 'AND', 'ic'] 1796
+if ['NOT', 'ie'] -1797
+ig ['id', 'AND', 'if'] 6393
+ih ['ia', 'OR', 'ig'] 16121
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FE50>, 'NOT', 'ii', ['NOT', 'ii'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A790>, 'ia', 'ig', ['ia', 'AND', 'ig'])
+ii ['ia', 'AND', 'ig'] 6248
+ij ['NOT', 'ii'] -6249
+ik ['ih', 'AND', 'ij'] 9873
+il ['hz', 'OR', 'ik'] 65457
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DCA0>, 'NOT', 'im', ['NOT', 'im'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E040>, 'hz', 'ik', ['hz', 'AND', 'ik'])
+im ['hz', 'AND', 'ik'] 8320
+in ['NOT', 'im'] -8321
+io ['il', 'AND', 'in'] 57137
+ip ['1', 'AND', 'io'] 1
+ir ['iq', 'OR', 'ip'] 2879
+jl ['ir', 'LSHIFT', '1'] 5758
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D820>, '1', 'jj', ['1', 'AND', 'jj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D430>, 'jg', 'ji', ['jg', 'AND', 'ji'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2DC0>, 'iu', 'jf', ['iu', 'OR', 'jf'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782670>, 'is', 'it', ['is', 'OR', 'it'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA700>, 'hz', '1', ['hz', 'RSHIFT', '1'])
+is ['hz', 'RSHIFT', '1'] 31952
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D280>, 'ip', '15', ['ip', 'LSHIFT', '15'])
+it ['ip', 'LSHIFT', '15'] 32768
+iu ['is', 'OR', 'it'] 64720
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2C10>, 'jc', 'je', ['jc', 'AND', 'je'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DAF0>, 'iv', 'jb', ['iv', 'OR', 'jb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796040>, 'iu', '2', ['iu', 'RSHIFT', '2'])
+iv ['iu', 'RSHIFT', '2'] 16180
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A0D0>, 'iy', 'ja', ['iy', 'AND', 'ja'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2940>, 'iw', 'ix', ['iw', 'OR', 'ix'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796E50>, 'iu', '3', ['iu', 'RSHIFT', '3'])
+iw ['iu', 'RSHIFT', '3'] 8090
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DEE0>, 'iu', '5', ['iu', 'RSHIFT', '5'])
+ix ['iu', 'RSHIFT', '5'] 2022
+iy ['iw', 'OR', 'ix'] 8190
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5940>, 'NOT', 'iz', ['NOT', 'iz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A28B0>, 'iw', 'ix', ['iw', 'AND', 'ix'])
+iz ['iw', 'AND', 'ix'] 1922
+ja ['NOT', 'iz'] -1923
+jb ['iy', 'AND', 'ja'] 6268
+jc ['iv', 'OR', 'jb'] 16252
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792E50>, 'NOT', 'jd', ['NOT', 'jd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2310>, 'iv', 'jb', ['iv', 'AND', 'jb'])
+jd ['iv', 'AND', 'jb'] 6196
+je ['NOT', 'jd'] -6197
+jf ['jc', 'AND', 'je'] 10056
+jg ['iu', 'OR', 'jf'] 65496
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827864C0>, 'NOT', 'jh', ['NOT', 'jh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782940>, 'iu', 'jf', ['iu', 'AND', 'jf'])
+jh ['iu', 'AND', 'jf'] 9280
+ji ['NOT', 'jh'] -9281
+jj ['jg', 'AND', 'ji'] 56216
+jk ['1', 'AND', 'jj'] 0
+jm ['jl', 'OR', 'jk'] 5758
+kg ['jm', 'LSHIFT', '1'] 11516
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5310>, '1', 'ke', ['1', 'AND', 'ke'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5C10>, 'kb', 'kd', ['kb', 'AND', 'kd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D8B0>, 'jp', 'ka', ['jp', 'OR', 'ka'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786550>, 'jn', 'jo', ['jn', 'OR', 'jo'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782CA0>, 'iu', '1', ['iu', 'RSHIFT', '1'])
+jn ['iu', 'RSHIFT', '1'] 32360
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796AF0>, 'jk', '15', ['jk', 'LSHIFT', '15'])
+jo ['jk', 'LSHIFT', '15'] 0
+jp ['jn', 'OR', 'jo'] 32360
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2670>, 'jx', 'jz', ['jx', 'AND', 'jz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786790>, 'jq', 'jw', ['jq', 'OR', 'jw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827869D0>, 'jp', '2', ['jp', 'RSHIFT', '2'])
+jq ['jp', 'RSHIFT', '2'] 8090
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A53A0>, 'jt', 'jv', ['jt', 'AND', 'jv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827928B0>, 'jr', 'js', ['jr', 'OR', 'js'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789CA0>, 'jp', '3', ['jp', 'RSHIFT', '3'])
+jr ['jp', 'RSHIFT', '3'] 4045
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789D30>, 'jp', '5', ['jp', 'RSHIFT', '5'])
+js ['jp', 'RSHIFT', '5'] 1011
+jt ['jr', 'OR', 'js'] 4095
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5E50>, 'NOT', 'ju', ['NOT', 'ju'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5CA0>, 'jr', 'js', ['jr', 'AND', 'js'])
+ju ['jr', 'AND', 'js'] 961
+jv ['NOT', 'ju'] -962
+jw ['jt', 'AND', 'jv'] 3134
+jx ['jq', 'OR', 'jw'] 8126
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A24C0>, 'NOT', 'jy', ['NOT', 'jy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E700>, 'jq', 'jw', ['jq', 'AND', 'jw'])
+jy ['jq', 'AND', 'jw'] 3098
+jz ['NOT', 'jy'] -3099
+ka ['jx', 'AND', 'jz'] 5028
+kb ['jp', 'OR', 'ka'] 32748
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5550>, 'NOT', 'kc', ['NOT', 'kc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786B80>, 'jp', 'ka', ['jp', 'AND', 'ka'])
+kc ['jp', 'AND', 'ka'] 4640
+kd ['NOT', 'kc'] -4641
+ke ['kb', 'AND', 'kd'] 28108
+kf ['1', 'AND', 'ke'] 0
+kh ['kg', 'OR', 'kf'] 11516
+lb ['kh', 'LSHIFT', '1'] 23032
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792550>, '1', 'kz', ['1', 'AND', 'kz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782700>, 'kw', 'ky', ['kw', 'AND', 'ky'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782A60>, 'kk', 'kv', ['kk', 'OR', 'kv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789040>, 'ki', 'kj', ['ki', 'OR', 'kj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2820>, 'jp', '1', ['jp', 'RSHIFT', '1'])
+ki ['jp', 'RSHIFT', '1'] 16180
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827894C0>, 'kf', '15', ['kf', 'LSHIFT', '15'])
+kj ['kf', 'LSHIFT', '15'] 0
+kk ['ki', 'OR', 'kj'] 16180
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782AF0>, 'ks', 'ku', ['ks', 'AND', 'ku'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796790>, 'kl', 'kr', ['kl', 'OR', 'kr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827961F0>, 'kk', '2', ['kk', 'RSHIFT', '2'])
+kl ['kk', 'RSHIFT', '2'] 4045
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796EE0>, 'ko', 'kq', ['ko', 'AND', 'kq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F820>, 'km', 'kn', ['km', 'OR', 'kn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786310>, 'kk', '3', ['kk', 'RSHIFT', '3'])
+km ['kk', 'RSHIFT', '3'] 2022
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796CA0>, 'kk', '5', ['kk', 'RSHIFT', '5'])
+kn ['kk', 'RSHIFT', '5'] 505
+ko ['km', 'OR', 'kn'] 2047
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786F70>, 'NOT', 'kp', ['NOT', 'kp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AA60>, 'km', 'kn', ['km', 'AND', 'kn'])
+kp ['km', 'AND', 'kn'] 480
+kq ['NOT', 'kp'] -481
+kr ['ko', 'AND', 'kq'] 1567
+ks ['kl', 'OR', 'kr'] 4063
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AEE0>, 'NOT', 'kt', ['NOT', 'kt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A700>, 'kl', 'kr', ['kl', 'AND', 'kr'])
+kt ['kl', 'AND', 'kr'] 1549
+ku ['NOT', 'kt'] -1550
+kv ['ks', 'AND', 'ku'] 2514
+kw ['kk', 'OR', 'kv'] 16374
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786280>, 'NOT', 'kx', ['NOT', 'kx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A430>, 'kk', 'kv', ['kk', 'AND', 'kv'])
+kx ['kk', 'AND', 'kv'] 2320
+ky ['NOT', 'kx'] -2321
+kz ['kw', 'AND', 'ky'] 14054
+la ['1', 'AND', 'kz'] 0
+lc ['lb', 'OR', 'la'] 23032
+lw ['lc', 'LSHIFT', '1'] 46064
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792DC0>, '1', 'lu', ['1', 'AND', 'lu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F3A0>, 'lr', 'lt', ['lr', 'AND', 'lt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F310>, 'lf', 'lq', ['lf', 'OR', 'lq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782F70>, 'ld', 'le', ['ld', 'OR', 'le'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FF70>, 'kk', '1', ['kk', 'RSHIFT', '1'])
+ld ['kk', 'RSHIFT', '1'] 8090
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E1F0>, 'la', '15', ['la', 'LSHIFT', '15'])
+le ['la', 'LSHIFT', '15'] 0
+lf ['ld', 'OR', 'le'] 8090
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796310>, 'ln', 'lp', ['ln', 'AND', 'lp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827861F0>, 'lg', 'lm', ['lg', 'OR', 'lm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789430>, 'lf', '2', ['lf', 'RSHIFT', '2'])
+lg ['lf', 'RSHIFT', '2'] 2022
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786DC0>, 'lj', 'll', ['lj', 'AND', 'll'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792820>, 'lh', 'li', ['lh', 'OR', 'li'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782280>, 'lf', '3', ['lf', 'RSHIFT', '3'])
+lh ['lf', 'RSHIFT', '3'] 1011
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789670>, 'lf', '5', ['lf', 'RSHIFT', '5'])
+li ['lf', 'RSHIFT', '5'] 252
+lj ['lh', 'OR', 'li'] 1023
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789C10>, 'NOT', 'lk', ['NOT', 'lk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278ED30>, 'lh', 'li', ['lh', 'AND', 'li'])
+lk ['lh', 'AND', 'li'] 240
+ll ['NOT', 'lk'] -241
+lm ['lj', 'AND', 'll'] 783
+ln ['lg', 'OR', 'lm'] 2031
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FAF0>, 'NOT', 'lo', ['NOT', 'lo'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827823A0>, 'lg', 'lm', ['lg', 'AND', 'lm'])
+lo ['lg', 'AND', 'lm'] 774
+lp ['NOT', 'lo'] -775
+lq ['ln', 'AND', 'lp'] 1257
+lr ['lf', 'OR', 'lq'] 8187
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792790>, 'NOT', 'ls', ['NOT', 'ls'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827899D0>, 'lf', 'lq', ['lf', 'AND', 'lq'])
+ls ['lf', 'AND', 'lq'] 1160
+lt ['NOT', 'ls'] -1161
+lu ['lr', 'AND', 'lt'] 7027
+lv ['1', 'AND', 'lu'] 1
+lx ['lw', 'OR', 'lv'] 46065
+a ['lx'] 46065
+46065
+
+
+===================[ Part 2 ]========================================
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F160>, 'lx', 'lx', ['lx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FA60>, 'lw', 'lv', ['lw', 'OR', 'lv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782040>, 'lc', '1', ['lc', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827820D0>, 'lb', 'la', ['lb', 'OR', 'la'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792430>, 'kh', '1', ['kh', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2D30>, 'kg', 'kf', ['kg', 'OR', 'kf'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA0D0>, 'jm', '1', ['jm', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789F70>, 'jl', 'jk', ['jl', 'OR', 'jk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E940>, 'ir', '1', ['ir', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DE50>, 'iq', 'ip', ['iq', 'OR', 'ip'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A21F0>, 'hw', '1', ['hw', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAC10>, 'hv', 'hu', ['hv', 'OR', 'hu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F550>, 'hb', '1', ['hb', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792EE0>, 'ha', 'gz', ['ha', 'OR', 'gz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E9D0>, 'gg', '1', ['gg', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827925E0>, 'gf', 'ge', ['gf', 'OR', 'ge'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DD30>, 'fl', '1', ['fl', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786CA0>, 'fk', 'fj', ['fk', 'OR', 'fj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789EE0>, 'eq', '1', ['eq', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786820>, 'ep', 'eo', ['ep', 'OR', 'eo'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796700>, 'dv', '1', ['dv', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5EE0>, 'du', 'dt', ['du', 'OR', 'dt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2700>, 'da', '1', ['da', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827890D0>, 'cz', 'cy', ['cz', 'OR', 'cy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827824C0>, 'cf', '1', ['cf', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EDC0>, 'ce', 'cd', ['ce', 'OR', 'cd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FDC0>, 'bk', '1', ['bk', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782820>, 'bj', 'bi', ['bj', 'OR', 'bi'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FD30>, 'ap', '1', ['ap', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A4C0>, 'ao', 'an', ['ao', 'OR', 'an'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A50D0>, 'u', '1', ['u', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F0D0>, 't', 's', ['t', 'OR', 's'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F700>, 'c', '1', ['c', 'LSHIFT', '1'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827929D0>, '0', '0', ['0'])
+c ['0'] 0
+t ['c', 'LSHIFT', '1'] 0
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792040>, '1', 'r', ['1', 'AND', 'r'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FC10>, 'o', 'q', ['o', 'AND', 'q'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796A60>, 'b', 'n', ['b', 'OR', 'n'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A940>, 'k', 'm', ['k', 'AND', 'm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E430>, 'd', 'j', ['d', 'OR', 'j'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA040>, 'b', '2', ['b', 'RSHIFT', '2'])
+d ['b', 'RSHIFT', '2'] 11516
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA820>, 'g', 'i', ['g', 'AND', 'i'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782310>, 'e', 'f', ['e', 'OR', 'f'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA9D0>, 'b', '3', ['b', 'RSHIFT', '3'])
+e ['b', 'RSHIFT', '3'] 5758
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5AF0>, 'b', '5', ['b', 'RSHIFT', '5'])
+f ['b', 'RSHIFT', '5'] 1439
+g ['e', 'OR', 'f'] 6143
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA3A0>, 'NOT', 'h', ['NOT', 'h'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792CA0>, 'e', 'f', ['e', 'AND', 'f'])
+h ['e', 'AND', 'f'] 1054
+i ['NOT', 'h'] -1055
+j ['g', 'AND', 'i'] 5089
+k ['d', 'OR', 'j'] 16381
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789A60>, 'NOT', 'l', ['NOT', 'l'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786670>, 'd', 'j', ['d', 'AND', 'j'])
+l ['d', 'AND', 'j'] 224
+m ['NOT', 'l'] -225
+n ['k', 'AND', 'm'] 16157
+o ['b', 'OR', 'n'] 49149
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F9D0>, 'NOT', 'p', ['NOT', 'p'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796280>, 'b', 'n', ['b', 'AND', 'n'])
+p ['b', 'AND', 'n'] 13073
+q ['NOT', 'p'] -13074
+r ['o', 'AND', 'q'] 36076
+s ['1', 'AND', 'r'] 0
+u ['t', 'OR', 's'] 0
+ao ['u', 'LSHIFT', '1'] 0
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782160>, '1', 'am', ['1', 'AND', 'am'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AC10>, 'aj', 'al', ['aj', 'AND', 'al'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A3A0>, 'x', 'ai', ['x', 'OR', 'ai'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E3A0>, 'v', 'w', ['v', 'OR', 'w'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782C10>, 'b', '1', ['b', 'RSHIFT', '1'])
+v ['b', 'RSHIFT', '1'] 23032
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789E50>, 's', '15', ['s', 'LSHIFT', '15'])
+w ['s', 'LSHIFT', '15'] 0
+x ['v', 'OR', 'w'] 23032
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2550>, 'af', 'ah', ['af', 'AND', 'ah'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A51F0>, 'y', 'ae', ['y', 'OR', 'ae'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EA60>, 'x', '2', ['x', 'RSHIFT', '2'])
+y ['x', 'RSHIFT', '2'] 5758
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAD30>, 'ab', 'ad', ['ab', 'AND', 'ad'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792280>, 'z', 'aa', ['z', 'OR', 'aa'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278ECA0>, 'x', '3', ['x', 'RSHIFT', '3'])
+z ['x', 'RSHIFT', '3'] 2879
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DB80>, 'x', '5', ['x', 'RSHIFT', '5'])
+aa ['x', 'RSHIFT', '5'] 719
+ab ['z', 'OR', 'aa'] 3071
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AADC0>, 'NOT', 'ac', ['NOT', 'ac'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AF70>, 'z', 'aa', ['z', 'AND', 'aa'])
+ac ['z', 'AND', 'aa'] 527
+ad ['NOT', 'ac'] -528
+ae ['ab', 'AND', 'ad'] 2544
+af ['y', 'OR', 'ae'] 8190
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5A60>, 'NOT', 'ag', ['NOT', 'ag'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAB80>, 'y', 'ae', ['y', 'AND', 'ae'])
+ag ['y', 'AND', 'ae'] 112
+ah ['NOT', 'ag'] -113
+ai ['af', 'AND', 'ah'] 8078
+aj ['x', 'OR', 'ai'] 24574
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D040>, 'NOT', 'ak', ['NOT', 'ak'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA550>, 'x', 'ai', ['x', 'AND', 'ai'])
+ak ['x', 'AND', 'ai'] 6536
+al ['NOT', 'ak'] -6537
+am ['aj', 'AND', 'al'] 18038
+an ['1', 'AND', 'am'] 0
+ap ['ao', 'OR', 'an'] 0
+bj ['ap', 'LSHIFT', '1'] 0
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F5E0>, '1', 'bh', ['1', 'AND', 'bh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782DC0>, 'be', 'bg', ['be', 'AND', 'bg'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796550>, 'as', 'bd', ['as', 'OR', 'bd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A040>, 'aq', 'ar', ['aq', 'OR', 'ar'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A5E0>, 'x', '1', ['x', 'RSHIFT', '1'])
+aq ['x', 'RSHIFT', '1'] 11516
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827891F0>, 'an', '15', ['an', 'LSHIFT', '15'])
+ar ['an', 'LSHIFT', '15'] 0
+as ['aq', 'OR', 'ar'] 11516
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2AF0>, 'ba', 'bc', ['ba', 'AND', 'bc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796DC0>, 'at', 'az', ['at', 'OR', 'az'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2430>, 'as', '2', ['as', 'RSHIFT', '2'])
+at ['as', 'RSHIFT', '2'] 2879
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E820>, 'aw', 'ay', ['aw', 'AND', 'ay'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D3A0>, 'au', 'av', ['au', 'OR', 'av'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789160>, 'as', '3', ['as', 'RSHIFT', '3'])
+au ['as', 'RSHIFT', '3'] 1439
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786040>, 'as', '5', ['as', 'RSHIFT', '5'])
+av ['as', 'RSHIFT', '5'] 359
+aw ['au', 'OR', 'av'] 1535
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F1F0>, 'NOT', 'ax', ['NOT', 'ax'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792940>, 'au', 'av', ['au', 'AND', 'av'])
+ax ['au', 'AND', 'av'] 263
+ay ['NOT', 'ax'] -264
+az ['aw', 'AND', 'ay'] 1272
+ba ['at', 'OR', 'az'] 4095
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EE50>, 'NOT', 'bb', ['NOT', 'bb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A310>, 'at', 'az', ['at', 'AND', 'az'])
+bb ['at', 'AND', 'az'] 56
+bc ['NOT', 'bb'] -57
+bd ['ba', 'AND', 'bc'] 4039
+be ['as', 'OR', 'bd'] 12287
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789DC0>, 'NOT', 'bf', ['NOT', 'bf'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786C10>, 'as', 'bd', ['as', 'AND', 'bd'])
+bf ['as', 'AND', 'bd'] 3268
+bg ['NOT', 'bf'] -3269
+bh ['be', 'AND', 'bg'] 9019
+bi ['1', 'AND', 'bh'] 1
+bk ['bj', 'OR', 'bi'] 1
+ce ['bk', 'LSHIFT', '1'] 2
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A280>, '1', 'cc', ['1', 'AND', 'cc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827898B0>, 'bz', 'cb', ['bz', 'AND', 'cb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AE50>, 'bn', 'by', ['bn', 'OR', 'by'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EB80>, 'bl', 'bm', ['bl', 'OR', 'bm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796160>, 'as', '1', ['as', 'RSHIFT', '1'])
+bl ['as', 'RSHIFT', '1'] 5758
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792310>, 'bi', '15', ['bi', 'LSHIFT', '15'])
+bm ['bi', 'LSHIFT', '15'] 32768
+bn ['bl', 'OR', 'bm'] 38526
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5040>, 'bv', 'bx', ['bv', 'AND', 'bx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA1F0>, 'bo', 'bu', ['bo', 'OR', 'bu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8276BDC0>, 'bn', '2', ['bn', 'RSHIFT', '2'])
+bo ['bn', 'RSHIFT', '2'] 9631
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E280>, 'br', 'bt', ['br', 'AND', 'bt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789700>, 'bp', 'bq', ['bp', 'OR', 'bq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A1F0>, 'bn', '3', ['bn', 'RSHIFT', '3'])
+bp ['bn', 'RSHIFT', '3'] 4815
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A9D0>, 'bn', '5', ['bn', 'RSHIFT', '5'])
+bq ['bn', 'RSHIFT', '5'] 1203
+br ['bp', 'OR', 'bq'] 5887
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827829D0>, 'NOT', 'bs', ['NOT', 'bs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792C10>, 'bp', 'bq', ['bp', 'AND', 'bq'])
+bs ['bp', 'AND', 'bq'] 131
+bt ['NOT', 'bs'] -132
+bu ['br', 'AND', 'bt'] 5756
+bv ['bo', 'OR', 'bu'] 14335
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F8B0>, 'NOT', 'bw', ['NOT', 'bw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA5E0>, 'bo', 'bu', ['bo', 'AND', 'bu'])
+bw ['bo', 'AND', 'bu'] 1052
+bx ['NOT', 'bw'] -1053
+by ['bv', 'AND', 'bx'] 13283
+bz ['bn', 'OR', 'by'] 47103
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2F70>, 'NOT', 'ca', ['NOT', 'ca'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5280>, 'bn', 'by', ['bn', 'AND', 'by'])
+ca ['bn', 'AND', 'by'] 4706
+cb ['NOT', 'ca'] -4707
+cc ['bz', 'AND', 'cb'] 42397
+cd ['1', 'AND', 'cc'] 1
+cf ['ce', 'OR', 'cd'] 3
+cz ['cf', 'LSHIFT', '1'] 6
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F4C0>, '1', 'cx', ['1', 'AND', 'cx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D0D0>, 'cu', 'cw', ['cu', 'AND', 'cw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F940>, 'ci', 'ct', ['ci', 'OR', 'ct'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827924C0>, 'cg', 'ch', ['cg', 'OR', 'ch'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782550>, 'bn', '1', ['bn', 'RSHIFT', '1'])
+cg ['bn', 'RSHIFT', '1'] 19263
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279ACA0>, 'cd', '15', ['cd', 'LSHIFT', '15'])
+ch ['cd', 'LSHIFT', '15'] 32768
+ci ['cg', 'OR', 'ch'] 52031
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5D30>, 'cq', 'cs', ['cq', 'AND', 'cs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8276BF70>, 'cj', 'cp', ['cj', 'OR', 'cp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827964C0>, 'ci', '2', ['ci', 'RSHIFT', '2'])
+cj ['ci', 'RSHIFT', '2'] 13007
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5160>, 'cm', 'co', ['cm', 'AND', 'co'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A20D0>, 'ck', 'cl', ['ck', 'OR', 'cl'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796D30>, 'ci', '3', ['ci', 'RSHIFT', '3'])
+ck ['ci', 'RSHIFT', '3'] 6503
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2280>, 'ci', '5', ['ci', 'RSHIFT', '5'])
+cl ['ci', 'RSHIFT', '5'] 1625
+cm ['ck', 'OR', 'cl'] 8063
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E310>, 'NOT', 'cn', ['NOT', 'cn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782790>, 'ck', 'cl', ['ck', 'AND', 'cl'])
+cn ['ck', 'AND', 'cl'] 65
+co ['NOT', 'cn'] -66
+cp ['cm', 'AND', 'co'] 7998
+cq ['cj', 'OR', 'cp'] 16383
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5B80>, 'NOT', 'cr', ['NOT', 'cr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827963A0>, 'cj', 'cp', ['cj', 'AND', 'cp'])
+cr ['cj', 'AND', 'cp'] 4622
+cs ['NOT', 'cr'] -4623
+ct ['cq', 'AND', 'cs'] 11761
+cu ['ci', 'OR', 'ct'] 61439
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5700>, 'NOT', 'cv', ['NOT', 'cv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D4C0>, 'ci', 'ct', ['ci', 'AND', 'ct'])
+cv ['ci', 'AND', 'ct'] 2353
+cw ['NOT', 'cv'] -2354
+cx ['cu', 'AND', 'cw'] 59086
+cy ['1', 'AND', 'cx'] 0
+da ['cz', 'OR', 'cy'] 6
+du ['da', 'LSHIFT', '1'] 12
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A25E0>, '1', 'ds', ['1', 'AND', 'ds'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA940>, 'dp', 'dr', ['dp', 'AND', 'dr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5670>, 'dd', 'do', ['dd', 'OR', 'do'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EAF0>, 'db', 'dc', ['db', 'OR', 'dc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782430>, 'ci', '1', ['ci', 'RSHIFT', '1'])
+db ['ci', 'RSHIFT', '1'] 26015
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796C10>, 'cy', '15', ['cy', 'LSHIFT', '15'])
+dc ['cy', 'LSHIFT', '15'] 0
+dd ['db', 'OR', 'dc'] 26015
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796430>, 'dl', 'dn', ['dl', 'AND', 'dn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D310>, 'de', 'dk', ['de', 'OR', 'dk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792700>, 'dd', '2', ['dd', 'RSHIFT', '2'])
+de ['dd', 'RSHIFT', '2'] 6503
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FCA0>, 'dh', 'dj', ['dh', 'AND', 'dj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DA60>, 'df', 'dg', ['df', 'OR', 'dg'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A160>, 'dd', '3', ['dd', 'RSHIFT', '3'])
+df ['dd', 'RSHIFT', '3'] 3251
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A23A0>, 'dd', '5', ['dd', 'RSHIFT', '5'])
+dg ['dd', 'RSHIFT', '5'] 812
+dh ['df', 'OR', 'dg'] 4031
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789B80>, 'NOT', 'di', ['NOT', 'di'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A820>, 'df', 'dg', ['df', 'AND', 'dg'])
+di ['df', 'AND', 'dg'] 32
+dj ['NOT', 'di'] -33
+dk ['dh', 'AND', 'dj'] 3999
+dl ['de', 'OR', 'dk'] 8191
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786AF0>, 'NOT', 'dm', ['NOT', 'dm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D940>, 'de', 'dk', ['de', 'AND', 'dk'])
+dm ['de', 'AND', 'dk'] 2311
+dn ['NOT', 'dm'] -2312
+do ['dl', 'AND', 'dn'] 5880
+dp ['dd', 'OR', 'do'] 30719
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA160>, 'NOT', 'dq', ['NOT', 'dq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5F70>, 'dd', 'do', ['dd', 'AND', 'do'])
+dq ['dd', 'AND', 'do'] 1176
+dr ['NOT', 'dq'] -1177
+ds ['dp', 'AND', 'dr'] 29543
+dt ['1', 'AND', 'ds'] 1
+dv ['du', 'OR', 'dt'] 13
+ep ['dv', 'LSHIFT', '1'] 26
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827921F0>, '1', 'en', ['1', 'AND', 'en'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827863A0>, 'ek', 'em', ['ek', 'AND', 'em'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F430>, 'dy', 'ej', ['dy', 'OR', 'ej'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786D30>, 'dw', 'dx', ['dw', 'OR', 'dx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5820>, 'dd', '1', ['dd', 'RSHIFT', '1'])
+dw ['dd', 'RSHIFT', '1'] 13007
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AAF0>, 'dt', '15', ['dt', 'LSHIFT', '15'])
+dx ['dt', 'LSHIFT', '15'] 32768
+dy ['dw', 'OR', 'dx'] 45775
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786A60>, 'eg', 'ei', ['eg', 'AND', 'ei'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E0D0>, 'dz', 'ef', ['dz', 'OR', 'ef'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D1F0>, 'dy', '2', ['dy', 'RSHIFT', '2'])
+dz ['dy', 'RSHIFT', '2'] 11443
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786E50>, 'ec', 'ee', ['ec', 'AND', 'ee'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789940>, 'ea', 'eb', ['ea', 'OR', 'eb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A550>, 'dy', '3', ['dy', 'RSHIFT', '3'])
+ea ['dy', 'RSHIFT', '3'] 5721
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D550>, 'dy', '5', ['dy', 'RSHIFT', '5'])
+eb ['dy', 'RSHIFT', '5'] 1430
+ec ['ea', 'OR', 'eb'] 6111
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E670>, 'NOT', 'ed', ['NOT', 'ed'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F790>, 'ea', 'eb', ['ea', 'AND', 'eb'])
+ed ['ea', 'AND', 'eb'] 1040
+ee ['NOT', 'ed'] -1041
+ef ['ec', 'AND', 'ee'] 5071
+eg ['dz', 'OR', 'ef'] 16383
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796F70>, 'NOT', 'eh', ['NOT', 'eh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789550>, 'dz', 'ef', ['dz', 'AND', 'ef'])
+eh ['dz', 'AND', 'ef'] 131
+ei ['NOT', 'eh'] -132
+ej ['eg', 'AND', 'ei'] 16252
+ek ['dy', 'OR', 'ej'] 49151
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2040>, 'NOT', 'el', ['NOT', 'el'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A54C0>, 'dy', 'ej', ['dy', 'AND', 'ej'])
+el ['dy', 'AND', 'ej'] 12876
+em ['NOT', 'el'] -12877
+en ['ek', 'AND', 'em'] 36275
+eo ['1', 'AND', 'en'] 1
+eq ['ep', 'OR', 'eo'] 27
+fk ['eq', 'LSHIFT', '1'] 54
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789310>, '1', 'fi', ['1', 'AND', 'fi'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E8B0>, 'ff', 'fh', ['ff', 'AND', 'fh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E790>, 'et', 'fe', ['et', 'OR', 'fe'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2E50>, 'er', 'es', ['er', 'OR', 'es'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792F70>, 'dy', '1', ['dy', 'RSHIFT', '1'])
+er ['dy', 'RSHIFT', '1'] 22887
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A29D0>, 'eo', '15', ['eo', 'LSHIFT', '15'])
+es ['eo', 'LSHIFT', '15'] 32768
+et ['er', 'OR', 'es'] 55655
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792160>, 'fb', 'fd', ['fb', 'AND', 'fd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D670>, 'eu', 'fa', ['eu', 'OR', 'fa'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2CA0>, 'et', '2', ['et', 'RSHIFT', '2'])
+eu ['et', 'RSHIFT', '2'] 13913
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D9D0>, 'ex', 'ez', ['ex', 'AND', 'ez'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A55E0>, 'ev', 'ew', ['ev', 'OR', 'ew'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2160>, 'et', '3', ['et', 'RSHIFT', '3'])
+ev ['et', 'RSHIFT', '3'] 6956
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792B80>, 'et', '5', ['et', 'RSHIFT', '5'])
+ew ['et', 'RSHIFT', '5'] 1739
+ex ['ev', 'OR', 'ew'] 8175
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786940>, 'NOT', 'ey', ['NOT', 'ey'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2A60>, 'ev', 'ew', ['ev', 'AND', 'ew'])
+ey ['ev', 'AND', 'ew'] 520
+ez ['NOT', 'ey'] -521
+fa ['ex', 'AND', 'ez'] 7655
+fb ['eu', 'OR', 'fa'] 16383
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DF70>, 'NOT', 'fc', ['NOT', 'fc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A670>, 'eu', 'fa', ['eu', 'AND', 'fa'])
+fc ['eu', 'AND', 'fa'] 5185
+fd ['NOT', 'fc'] -5186
+fe ['fb', 'AND', 'fd'] 11198
+ff ['et', 'OR', 'fe'] 64511
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796940>, 'NOT', 'fg', ['NOT', 'fg'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827825E0>, 'et', 'fe', ['et', 'AND', 'fe'])
+fg ['et', 'AND', 'fe'] 2342
+fh ['NOT', 'fg'] -2343
+fi ['ff', 'AND', 'fh'] 62169
+fj ['1', 'AND', 'fi'] 1
+fl ['fk', 'OR', 'fj'] 55
+gf ['fl', 'LSHIFT', '1'] 110
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E4C0>, '1', 'gd', ['1', 'AND', 'gd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782E50>, 'ga', 'gc', ['ga', 'AND', 'gc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F040>, 'fo', 'fz', ['fo', 'OR', 'fz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827860D0>, 'fm', 'fn', ['fm', 'OR', 'fn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786700>, 'et', '1', ['et', 'RSHIFT', '1'])
+fm ['et', 'RSHIFT', '1'] 27827
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789280>, 'fj', '15', ['fj', 'LSHIFT', '15'])
+fn ['fj', 'LSHIFT', '15'] 32768
+fo ['fm', 'OR', 'fn'] 60595
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827920D0>, 'fw', 'fy', ['fw', 'AND', 'fy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FB80>, 'fp', 'fv', ['fp', 'OR', 'fv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2EE0>, 'fo', '2', ['fo', 'RSHIFT', '2'])
+fp ['fo', 'RSHIFT', '2'] 15148
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2790>, 'fs', 'fu', ['fs', 'AND', 'fu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5430>, 'fq', 'fr', ['fq', 'OR', 'fr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8276BEE0>, 'fo', '3', ['fo', 'RSHIFT', '3'])
+fq ['fo', 'RSHIFT', '3'] 7574
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782D30>, 'fo', '5', ['fo', 'RSHIFT', '5'])
+fr ['fo', 'RSHIFT', '5'] 1893
+fs ['fq', 'OR', 'fr'] 8183
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786430>, 'NOT', 'ft', ['NOT', 'ft'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786EE0>, 'fq', 'fr', ['fq', 'AND', 'fr'])
+ft ['fq', 'AND', 'fr'] 1284
+fu ['NOT', 'ft'] -1285
+fv ['fs', 'AND', 'fu'] 6899
+fw ['fp', 'OR', 'fv'] 15359
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A8B0>, 'NOT', 'fx', ['NOT', 'fx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2B80>, 'fp', 'fv', ['fp', 'AND', 'fv'])
+fx ['fp', 'AND', 'fv'] 6688
+fy ['NOT', 'fx'] -6689
+fz ['fw', 'AND', 'fy'] 8671
+ga ['fo', 'OR', 'fz'] 60927
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EF70>, 'NOT', 'gb', ['NOT', 'gb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D790>, 'fo', 'fz', ['fo', 'AND', 'fz'])
+gb ['fo', 'AND', 'fz'] 8339
+gc ['NOT', 'gb'] -8340
+gd ['ga', 'AND', 'gc'] 52588
+ge ['1', 'AND', 'gd'] 0
+gg ['gf', 'OR', 'ge'] 110
+ha ['gg', 'LSHIFT', '1'] 220
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E160>, '1', 'gy', ['1', 'AND', 'gy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA4C0>, 'gv', 'gx', ['gv', 'AND', 'gx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796820>, 'gj', 'gu', ['gj', 'OR', 'gu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FEE0>, 'gh', 'gi', ['gh', 'OR', 'gi'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789820>, 'fo', '1', ['fo', 'RSHIFT', '1'])
+gh ['fo', 'RSHIFT', '1'] 30297
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827965E0>, 'ge', '15', ['ge', 'LSHIFT', '15'])
+gi ['ge', 'LSHIFT', '15'] 0
+gj ['gh', 'OR', 'gi'] 30297
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5790>, 'gr', 'gt', ['gr', 'AND', 'gt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA280>, 'gk', 'gq', ['gk', 'OR', 'gq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792670>, 'gj', '2', ['gj', 'RSHIFT', '2'])
+gk ['gj', 'RSHIFT', '2'] 7574
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827821F0>, 'gn', 'gp', ['gn', 'AND', 'gp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAAF0>, 'gl', 'gm', ['gl', 'OR', 'gm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D700>, 'gj', '3', ['gj', 'RSHIFT', '3'])
+gl ['gj', 'RSHIFT', '3'] 3787
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA790>, 'gj', '5', ['gj', 'RSHIFT', '5'])
+gm ['gj', 'RSHIFT', '5'] 946
+gn ['gl', 'OR', 'gm'] 4091
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E5E0>, 'NOT', 'go', ['NOT', 'go'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAA60>, 'gl', 'gm', ['gl', 'AND', 'gm'])
+go ['gl', 'AND', 'gm'] 642
+gp ['NOT', 'go'] -643
+gq ['gn', 'AND', 'gp'] 3449
+gr ['gk', 'OR', 'gq'] 7679
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789790>, 'NOT', 'gs', ['NOT', 'gs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA8B0>, 'gk', 'gq', ['gk', 'AND', 'gq'])
+gs ['gk', 'AND', 'gq'] 3344
+gt ['NOT', 'gs'] -3345
+gu ['gr', 'AND', 'gt'] 4335
+gv ['gj', 'OR', 'gu'] 30463
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A58B0>, 'NOT', 'gw', ['NOT', 'gw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827865E0>, 'gj', 'gu', ['gj', 'AND', 'gu'])
+gw ['gj', 'AND', 'gu'] 4169
+gx ['NOT', 'gw'] -4170
+gy ['gv', 'AND', 'gx'] 26294
+gz ['1', 'AND', 'gy'] 0
+hb ['ha', 'OR', 'gz'] 220
+hv ['hb', 'LSHIFT', '1'] 440
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAE50>, '1', 'ht', ['1', 'AND', 'ht'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA670>, 'hq', 'hs', ['hq', 'AND', 'hs'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA310>, 'he', 'hp', ['he', 'OR', 'hp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AD30>, 'hc', 'hd', ['hc', 'OR', 'hd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827828B0>, 'gj', '1', ['gj', 'RSHIFT', '1'])
+hc ['gj', 'RSHIFT', '1'] 15148
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796B80>, 'gz', '15', ['gz', 'LSHIFT', '15'])
+hd ['gz', 'LSHIFT', '15'] 0
+he ['hc', 'OR', 'hd'] 15148
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786160>, 'hm', 'ho', ['hm', 'AND', 'ho'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782EE0>, 'hf', 'hl', ['hf', 'OR', 'hl'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F280>, 'he', '2', ['he', 'RSHIFT', '2'])
+hf ['he', 'RSHIFT', '2'] 3787
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EEE0>, 'hi', 'hk', ['hi', 'AND', 'hk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827923A0>, 'hg', 'hh', ['hg', 'OR', 'hh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279ADC0>, 'he', '3', ['he', 'RSHIFT', '3'])
+hg ['he', 'RSHIFT', '3'] 1893
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827968B0>, 'he', '5', ['he', 'RSHIFT', '5'])
+hh ['he', 'RSHIFT', '5'] 473
+hi ['hg', 'OR', 'hh'] 2045
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DC10>, 'NOT', 'hj', ['NOT', 'hj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827969D0>, 'hg', 'hh', ['hg', 'AND', 'hh'])
+hj ['hg', 'AND', 'hh'] 321
+hk ['NOT', 'hj'] -322
+hl ['hi', 'AND', 'hk'] 1724
+hm ['hf', 'OR', 'hl'] 3839
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AAEE0>, 'NOT', 'hn', ['NOT', 'hn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA430>, 'hf', 'hl', ['hf', 'AND', 'hl'])
+hn ['hf', 'AND', 'hl'] 1672
+ho ['NOT', 'hn'] -1673
+hp ['hm', 'AND', 'ho'] 2167
+hq ['he', 'OR', 'hp'] 15231
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827960D0>, 'NOT', 'hr', ['NOT', 'hr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792A60>, 'he', 'hp', ['he', 'AND', 'hp'])
+hr ['he', 'AND', 'hp'] 2084
+hs ['NOT', 'hr'] -2085
+ht ['hq', 'AND', 'hs'] 13147
+hu ['1', 'AND', 'ht'] 1
+hw ['hv', 'OR', 'hu'] 441
+iq ['hw', 'LSHIFT', '1'] 882
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A59D0>, '1', 'io', ['1', 'AND', 'io'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5DC0>, 'il', 'in', ['il', 'AND', 'in'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782B80>, 'hz', 'ik', ['hz', 'OR', 'ik'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D5E0>, 'hx', 'hy', ['hx', 'OR', 'hy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827893A0>, 'he', '1', ['he', 'RSHIFT', '1'])
+hx ['he', 'RSHIFT', '1'] 7574
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DDC0>, 'hu', '15', ['hu', 'LSHIFT', '15'])
+hy ['hu', 'LSHIFT', '15'] 32768
+hz ['hx', 'OR', 'hy'] 40342
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F670>, 'ih', 'ij', ['ih', 'AND', 'ij'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E550>, 'ia', 'ig', ['ia', 'OR', 'ig'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AB80>, 'hz', '2', ['hz', 'RSHIFT', '2'])
+ia ['hz', 'RSHIFT', '2'] 10085
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792AF0>, 'id', 'if', ['id', 'AND', 'if'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827895E0>, 'ib', 'ic', ['ib', 'OR', 'ic'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789AF0>, 'hz', '3', ['hz', 'RSHIFT', '3'])
+ib ['hz', 'RSHIFT', '3'] 5042
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796670>, 'hz', '5', ['hz', 'RSHIFT', '5'])
+ic ['hz', 'RSHIFT', '5'] 1260
+id ['ib', 'OR', 'ic'] 6142
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D160>, 'NOT', 'ie', ['NOT', 'ie'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278EC10>, 'ib', 'ic', ['ib', 'AND', 'ic'])
+ie ['ib', 'AND', 'ic'] 160
+if ['NOT', 'ie'] -161
+ig ['id', 'AND', 'if'] 5982
+ih ['ia', 'OR', 'ig'] 14207
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FE50>, 'NOT', 'ii', ['NOT', 'ii'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A790>, 'ia', 'ig', ['ia', 'AND', 'ig'])
+ii ['ia', 'AND', 'ig'] 1860
+ij ['NOT', 'ii'] -1861
+ik ['ih', 'AND', 'ij'] 12347
+il ['hz', 'OR', 'ik'] 48575
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DCA0>, 'NOT', 'im', ['NOT', 'im'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E040>, 'hz', 'ik', ['hz', 'AND', 'ik'])
+im ['hz', 'AND', 'ik'] 4114
+in ['NOT', 'im'] -4115
+io ['il', 'AND', 'in'] 44461
+ip ['1', 'AND', 'io'] 1
+ir ['iq', 'OR', 'ip'] 883
+jl ['ir', 'LSHIFT', '1'] 1766
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D820>, '1', 'jj', ['1', 'AND', 'jj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D430>, 'jg', 'ji', ['jg', 'AND', 'ji'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2DC0>, 'iu', 'jf', ['iu', 'OR', 'jf'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782670>, 'is', 'it', ['is', 'OR', 'it'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828AA700>, 'hz', '1', ['hz', 'RSHIFT', '1'])
+is ['hz', 'RSHIFT', '1'] 20171
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D280>, 'ip', '15', ['ip', 'LSHIFT', '15'])
+it ['ip', 'LSHIFT', '15'] 32768
+iu ['is', 'OR', 'it'] 52939
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2C10>, 'jc', 'je', ['jc', 'AND', 'je'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DAF0>, 'iv', 'jb', ['iv', 'OR', 'jb'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796040>, 'iu', '2', ['iu', 'RSHIFT', '2'])
+iv ['iu', 'RSHIFT', '2'] 13234
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A0D0>, 'iy', 'ja', ['iy', 'AND', 'ja'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2940>, 'iw', 'ix', ['iw', 'OR', 'ix'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796E50>, 'iu', '3', ['iu', 'RSHIFT', '3'])
+iw ['iu', 'RSHIFT', '3'] 6617
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279DEE0>, 'iu', '5', ['iu', 'RSHIFT', '5'])
+ix ['iu', 'RSHIFT', '5'] 1654
+iy ['iw', 'OR', 'ix'] 8191
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5940>, 'NOT', 'iz', ['NOT', 'iz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A28B0>, 'iw', 'ix', ['iw', 'AND', 'ix'])
+iz ['iw', 'AND', 'ix'] 80
+ja ['NOT', 'iz'] -81
+jb ['iy', 'AND', 'ja'] 8111
+jc ['iv', 'OR', 'jb'] 16319
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792E50>, 'NOT', 'jd', ['NOT', 'jd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2310>, 'iv', 'jb', ['iv', 'AND', 'jb'])
+jd ['iv', 'AND', 'jb'] 5026
+je ['NOT', 'jd'] -5027
+jf ['jc', 'AND', 'je'] 11293
+jg ['iu', 'OR', 'jf'] 61151
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827864C0>, 'NOT', 'jh', ['NOT', 'jh'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782940>, 'iu', 'jf', ['iu', 'AND', 'jf'])
+jh ['iu', 'AND', 'jf'] 3081
+ji ['NOT', 'jh'] -3082
+jj ['jg', 'AND', 'ji'] 58070
+jk ['1', 'AND', 'jj'] 0
+jm ['jl', 'OR', 'jk'] 1766
+kg ['jm', 'LSHIFT', '1'] 3532
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5310>, '1', 'ke', ['1', 'AND', 'ke'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5C10>, 'kb', 'kd', ['kb', 'AND', 'kd'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279D8B0>, 'jp', 'ka', ['jp', 'OR', 'ka'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786550>, 'jn', 'jo', ['jn', 'OR', 'jo'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782CA0>, 'iu', '1', ['iu', 'RSHIFT', '1'])
+jn ['iu', 'RSHIFT', '1'] 26469
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796AF0>, 'jk', '15', ['jk', 'LSHIFT', '15'])
+jo ['jk', 'LSHIFT', '15'] 0
+jp ['jn', 'OR', 'jo'] 26469
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2670>, 'jx', 'jz', ['jx', 'AND', 'jz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786790>, 'jq', 'jw', ['jq', 'OR', 'jw'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827869D0>, 'jp', '2', ['jp', 'RSHIFT', '2'])
+jq ['jp', 'RSHIFT', '2'] 6617
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A53A0>, 'jt', 'jv', ['jt', 'AND', 'jv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827928B0>, 'jr', 'js', ['jr', 'OR', 'js'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789CA0>, 'jp', '3', ['jp', 'RSHIFT', '3'])
+jr ['jp', 'RSHIFT', '3'] 3308
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789D30>, 'jp', '5', ['jp', 'RSHIFT', '5'])
+js ['jp', 'RSHIFT', '5'] 827
+jt ['jr', 'OR', 'js'] 4095
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5E50>, 'NOT', 'ju', ['NOT', 'ju'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5CA0>, 'jr', 'js', ['jr', 'AND', 'js'])
+ju ['jr', 'AND', 'js'] 40
+jv ['NOT', 'ju'] -41
+jw ['jt', 'AND', 'jv'] 4055
+jx ['jq', 'OR', 'jw'] 8159
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A24C0>, 'NOT', 'jy', ['NOT', 'jy'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E700>, 'jq', 'jw', ['jq', 'AND', 'jw'])
+jy ['jq', 'AND', 'jw'] 2513
+jz ['NOT', 'jy'] -2514
+ka ['jx', 'AND', 'jz'] 5646
+kb ['jp', 'OR', 'ka'] 30575
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A5550>, 'NOT', 'kc', ['NOT', 'kc'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786B80>, 'jp', 'ka', ['jp', 'AND', 'ka'])
+kc ['jp', 'AND', 'ka'] 1540
+kd ['NOT', 'kc'] -1541
+ke ['kb', 'AND', 'kd'] 29035
+kf ['1', 'AND', 'ke'] 1
+kh ['kg', 'OR', 'kf'] 3533
+lb ['kh', 'LSHIFT', '1'] 7066
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792550>, '1', 'kz', ['1', 'AND', 'kz'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782700>, 'kw', 'ky', ['kw', 'AND', 'ky'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782A60>, 'kk', 'kv', ['kk', 'OR', 'kv'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789040>, 'ki', 'kj', ['ki', 'OR', 'kj'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B828A2820>, 'jp', '1', ['jp', 'RSHIFT', '1'])
+ki ['jp', 'RSHIFT', '1'] 13234
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827894C0>, 'kf', '15', ['kf', 'LSHIFT', '15'])
+kj ['kf', 'LSHIFT', '15'] 32768
+kk ['ki', 'OR', 'kj'] 46002
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782AF0>, 'ks', 'ku', ['ks', 'AND', 'ku'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796790>, 'kl', 'kr', ['kl', 'OR', 'kr'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827961F0>, 'kk', '2', ['kk', 'RSHIFT', '2'])
+kl ['kk', 'RSHIFT', '2'] 11500
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796EE0>, 'ko', 'kq', ['ko', 'AND', 'kq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F820>, 'km', 'kn', ['km', 'OR', 'kn'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786310>, 'kk', '3', ['kk', 'RSHIFT', '3'])
+km ['kk', 'RSHIFT', '3'] 5750
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796CA0>, 'kk', '5', ['kk', 'RSHIFT', '5'])
+kn ['kk', 'RSHIFT', '5'] 1437
+ko ['km', 'OR', 'kn'] 6143
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786F70>, 'NOT', 'kp', ['NOT', 'kp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AA60>, 'km', 'kn', ['km', 'AND', 'kn'])
+kp ['km', 'AND', 'kn'] 1044
+kq ['NOT', 'kp'] -1045
+kr ['ko', 'AND', 'kq'] 5099
+ks ['kl', 'OR', 'kr'] 16367
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279AEE0>, 'NOT', 'kt', ['NOT', 'kt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A700>, 'kl', 'kr', ['kl', 'AND', 'kr'])
+kt ['kl', 'AND', 'kr'] 232
+ku ['NOT', 'kt'] -233
+kv ['ks', 'AND', 'ku'] 16135
+kw ['kk', 'OR', 'kv'] 49079
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786280>, 'NOT', 'kx', ['NOT', 'kx'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8279A430>, 'kk', 'kv', ['kk', 'AND', 'kv'])
+kx ['kk', 'AND', 'kv'] 13058
+ky ['NOT', 'kx'] -13059
+kz ['kw', 'AND', 'ky'] 36021
+la ['1', 'AND', 'kz'] 1
+lc ['lb', 'OR', 'la'] 7067
+lw ['lc', 'LSHIFT', '1'] 14134
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792DC0>, '1', 'lu', ['1', 'AND', 'lu'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F3A0>, 'lr', 'lt', ['lr', 'AND', 'lt'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277F310>, 'lf', 'lq', ['lf', 'OR', 'lq'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782F70>, 'ld', 'le', ['ld', 'OR', 'le'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FF70>, 'kk', '1', ['kk', 'RSHIFT', '1'])
+ld ['kk', 'RSHIFT', '1'] 23001
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278E1F0>, 'la', '15', ['la', 'LSHIFT', '15'])
+le ['la', 'LSHIFT', '15'] 32768
+lf ['ld', 'OR', 'le'] 55769
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82796310>, 'ln', 'lp', ['ln', 'AND', 'lp'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827861F0>, 'lg', 'lm', ['lg', 'OR', 'lm'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789430>, 'lf', '2', ['lf', 'RSHIFT', '2'])
+lg ['lf', 'RSHIFT', '2'] 13942
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82786DC0>, 'lj', 'll', ['lj', 'AND', 'll'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792820>, 'lh', 'li', ['lh', 'OR', 'li'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82782280>, 'lf', '3', ['lf', 'RSHIFT', '3'])
+lh ['lf', 'RSHIFT', '3'] 6971
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789670>, 'lf', '5', ['lf', 'RSHIFT', '5'])
+li ['lf', 'RSHIFT', '5'] 1742
+lj ['lh', 'OR', 'li'] 8191
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82789C10>, 'NOT', 'lk', ['NOT', 'lk'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8278ED30>, 'lh', 'li', ['lh', 'AND', 'li'])
+lk ['lh', 'AND', 'li'] 522
+ll ['NOT', 'lk'] -523
+lm ['lj', 'AND', 'll'] 7669
+ln ['lg', 'OR', 'lm'] 16375
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B8277FAF0>, 'NOT', 'lo', ['NOT', 'lo'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827823A0>, 'lg', 'lm', ['lg', 'AND', 'lm'])
+lo ['lg', 'AND', 'lm'] 5236
+lp ['NOT', 'lo'] -5237
+lq ['ln', 'AND', 'lp'] 11139
+lr ['lf', 'OR', 'lq'] 64475
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B82792790>, 'NOT', 'ls', ['NOT', 'ls'])
+>>>>>> (<function o.<locals>.<lambda> at 0x0000013B827899D0>, 'lf', 'lq', ['lf', 'AND', 'lq'])
+ls ['lf', 'AND', 'lq'] 2433
+lt ['NOT', 'ls'] -2434
+lu ['lr', 'AND', 'lt'] 62042
+lv ['1', 'AND', 'lu'] 0
+lx ['lw', 'OR', 'lv'] 14134
+a ['lx'] 14134
+14134
+PS C:\Users\tcrow\Documents\Src\Python\adventofcode\2015> P
