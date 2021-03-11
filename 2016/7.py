@@ -7,7 +7,7 @@ def void(*args):
 
 # used to control whether to debug print or not
 dprint = void
-# dprint = print
+dprint = print
 
 
 def validate_ABBA(entry):
