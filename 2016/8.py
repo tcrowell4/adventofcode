@@ -75,22 +75,6 @@ dprint = void
 # dprint = print
 
 
-def validate_ABBA(entry):
-    # dprint(entry)
-    for i, ch in enumerate(entry):
-        # dprint(entry[i : i + 4], entry[i : i + 2], entry[i + 3 : i + 1 : -1])
-        if len(entry[i:]) < 4:
-            return False
-        if entry[i] == entry[i + 1]:
-            continue
-
-        if entry[i : i + 2] == entry[i + 3 : i + 1 : -1]:
-            dprint("valid ABBA", entry)
-            return True
-    else:
-        return False
-
-
 def process_input(lines, screen_size, part):
     print("======== Part 1 ==========")
     a1 = np.zeros(screen_size, dtype=int)
