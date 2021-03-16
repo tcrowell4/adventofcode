@@ -47,7 +47,6 @@ def extract_marker(line, depth=0):
     close_paren = line.find(")")
     marker = line[: close_paren + 1]
     marker_inst = marker[1:-1]
-    dprint("{} >>> marker {}".format(depth * " ", marker))
     num_subsequent_chars, repeat = marker_inst.split("x")
     num_subsequent_chars = int(num_subsequent_chars)
     repeat = int(repeat)
@@ -59,24 +58,18 @@ def extract_marker(line, depth=0):
 def process_marker(line_portion, count, depth=0):
     marker_idx = 0
 
-    dprint(depth * " ", ">>>in", line_portion[:20], end="...")
-    dprint(line_portion[-10:])
-
     line_len = len(line_portion)
     last_char = ")"
     marker_num_characters = 0  # designed to trigger to save the initial size
     while True:
-        # pause()
+
         num_subsequent_chars, repeat = 0, 0
         ch_count = 0
+
         if marker_idx >= line_len:
             break
-        dprint(
-            "{} >>> WHILE count {} marker_idx {} line_len {} ch {}".format(
-                depth * " ", count, marker_idx, line_len, line_portion[marker_idx]
-            )
-        )
-        # peak ahead to see if another marker is present
+
+        # Determine if a marker
         if line_portion[marker_idx] == "(":
             # extract marker
             repeat, num_subsequent_chars, marker = extract_marker(
@@ -88,19 +81,13 @@ def process_marker(line_portion, count, depth=0):
 
             marker_idx += len(marker)
 
+            # this is awkward but it protects the look ahead that follows
             if marker_idx >= line_len:
                 break
-
-            dprint(f"{depth * ' '} >>>> mid {marker_idx} {num_subsequent_chars}")
-            # dprint(
-            #     f"{depth * ' '} >>>> mid {line_portion[marker_idx : marker_idx + num_subsequent_chars]}"
-            # )
-            dprint(depth * " ", ">>> mid ", marker, num_subsequent_chars, repeat)
 
             # if the next character was an another marker then this needs
             # to be recursed
             if line_portion[marker_idx] == "(":
-                dprint(f"{depth * ' '} >>>> recurse ")
 
                 ch_cnt, processed_length = process_marker(
                     line_portion[marker_idx : marker_idx + num_subsequent_chars],
@@ -110,18 +97,11 @@ def process_marker(line_portion, count, depth=0):
                     depth + 4,
                 )
                 ch_count += ch_cnt * repeat
-                dprint(f"{depth * ' '} <<<< recurse  {ch_cnt} {processed_length} ")
                 marker_idx += num_subsequent_chars
             else:
-                dprint(
-                    f"{depth * ' '} >>>> else: normal character {line_portion[marker_idx]} "
-                )
                 ch_count = num_subsequent_chars * repeat
                 marker_idx += num_subsequent_chars
-                dprint(f"{depth * ' '} >>>> else: new marker_idx: {marker_idx} ")
         else:
-            dprint(f"{depth * ' '} **** normal character {line_portion[marker_idx]} ")
-            dprint(f"{depth * ' '} >>>> new marker_idx: {marker_idx} ")
             ch_count += 1
             marker_idx += 1
 
@@ -129,23 +109,12 @@ def process_marker(line_portion, count, depth=0):
 
     ch_count = num_subsequent_chars * repeat
     count += ch_count
-    dprint(f"{depth * ' '} >>>return {count} {marker_num_characters} ")
     return count, marker_num_characters
-
-    # dprint(
-    #     "{} >>>return {} idx {} final {} {}  {}".format(
-    #         depth * " ",
-    #         marker,
-    #         marker_idx,
-    #         ch_count,
-    #         repeat * count,
-    #         num_subsequent_chars + len(marker),
-    #     )
 
 
 @entryExit
 def process_input(lines, part):
-    print("======== Part 1 ==========")
+    print("======== Part 2 ==========")
     for line in lines:
         total_length = 0
         decompress = []
@@ -154,8 +123,6 @@ def process_input(lines, part):
         count, num_subs = process_marker(line[current_idx:], 0)
         total_length += count
         current_idx += num_subs
-        dprint("<<<returned", count, current_idx, num_subs)
-        dprint("<<<", line[current_idx : current_idx + 20] + ".....")
 
         # decom_msg = "".join(decompress)
         # print("decompressed message = {}".format(decom_msg))
