@@ -1,0 +1,63 @@
+Project day 11 Notes:
+
+
+swap two array positions in the same column 
+for our puzzle this represents either going up or down depending what current floor position is
+going up the row number decreases
+      dn the row number increases
+>>> initial_state[2,1], initial_state[3,1] = initial_state[3,1], initial_state[2,1]
+>>> initial_state
+array([[ 1, 33, 33,  1,  1],
+       [ 0,  3,  3,  0,  0],
+       [ 0,  5,  4,  0,  0],
+       [ 0,  4,  5,  0,  0]], dtype=int8)
+
+The copy allows a new state to be created and modified based on the available configurations
+
+    z = np.copy(init_node.state)
+    z[0, 2] = 9
+    print(init_node.state)
+	   
+todo:
+1. determine how best to validate each line. col 1,2 are a pair and 3,4 are a pair
+	- col 1 = Generator
+	- col 2 - Microchip
+	- if both are 1 or 0 that pair is ok
+2. determine if any microchip is unprotected with another generator present
+	if the number of microchips on the floor is not equal to the number of generators
+	and there is at least on generator 
+	then 
+		the array is invalid
+
+# sample random values 		
+>>> x
+array([[ 1, 33, 34,  1,  3],
+       [ 0,  3,  3,  0,  0],
+       [ 0,  5,  4,  0,  0],
+       [ 0,  4,  5,  0,  0]], dtype=int8)
+#  this selects all of the generators on the 4th floor
+>>> x[0,1::2]
+array([33,  1], dtype=int8)
+>>> x[0,2::2]
+array([34,  3], dtype=int8)
+
+for row in x:
+    print(row[1::2])
+	g = np.sum(row[1::2])
+    print(row[2::2])
+	m = np.sum(row[2::2])
+
+[33  1]
+[34  3]
+[3 0]
+[3 0]
+[5 0]
+[4 0]
+[4 0]
+[5 0]
+
+3. Possible repr for the state
+for row in A:
+    for cell in row:
+        print(cell, end=' ')
+	print('\n')

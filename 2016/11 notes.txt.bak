@@ -1,0 +1,11 @@
+Project day 11 Notes:
+
+
+swap two array positions in the same column 
+for our puzzle this represents either going up or down depending what current floor position is
+>>> initial_state[2,1], initial_state[3,1] = initial_state[3,1], initial_state[2,1]
+>>> initial_state
+array([[ 1, 33, 33,  1,  1],
+       [ 0,  3,  3,  0,  0],
+       [ 0,  5,  4,  0,  0],
+       [ 0,  4,  5,  0,  0]], dtype=int8)
