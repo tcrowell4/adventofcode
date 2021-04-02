@@ -27,7 +27,8 @@ always stops on each floor
 @dataclass
 class Node:
     state: any
-    id: any
+    floor: int
+    id: str
     prev: any
 
 
@@ -87,34 +88,26 @@ def process_input(lines, part=1):
     dprint("=========")
     # dprint(sorted(ITEMS_ABBR))
     for i, v in enumerate(sorted(ITEMS_ABBR)):
-        item_dict[v] = i + 1
+        item_dict[v] = i
     dprint("=========")
     dprint("item_dict", len(item_dict))
     for i, v in item_dict.items():
         dprint(i, v)
     dprint("=========")
-    # dprint(FLOORS)
-    # s = {x[:2] for x in ITEMS_ABBR}
-    # x = []
-    # for i, v in enumerate(s):
-    #     x.append(str(i + 1) + "G")
-    #     x.append(str(i + 1) + "M")
-    # dprint(sorted(x))
 
-    initial_state = np.zeros((len(floor_dict), len(item_dict) + 1), dtype=np.int8)
+    initial_state = np.zeros((len(floor_dict), len(item_dict)), dtype=np.int8)
 
     # build the state
-    # column 0 is the elevator  1=current floor
-    # column 1,3,5... = Generator
-    # column 2,4,6 = matching microchip
+    # column 0,2,4... = Generator
+    # column 1,3,5 = matching microchip
     for i, v in floor_dict.items():
         for j in v:
             initial_state[i, item_dict[j]] = 1
-    initial_state[3, 0] = 1  # set starting elevator floor
+    starting_floor = 3  # set starting elevator floor
     dprint(initial_state)
     key = initial_state.flatten().tolist()
-    id = "".join([str(aa) for aa in key])
-    init_node = Node(initial_state, id, "start")
+    id = str(starting_floor) + "".join([str(aa) for aa in key])
+    init_node = Node(initial_state, starting_floor, id, "start")
     dprint(init_node)
     print(init_node.state)
 
@@ -134,10 +127,10 @@ def validate_state(state):
     - ergo: if unprotected the generator is not its mate
     """
     for row in state:
-        gen = row[1::2]
+        gen = row[0::2]
         # print(gen)
         g = np.sum(gen)  # finds the number of generators
-        mc = row[2::2]
+        mc = row[1::2]
         # print(mc)
         m = np.sum(mc)
         # print(f"Gen = {g} Microchip {m}")
@@ -161,6 +154,8 @@ def bfs(startnode):
     r, c = startnode.state.shape
     final_state = np.zeros((r, c), dtype=np.int8)
     final_state[0] = 1  # set top floor to all ones
+    key = final_state.flatten().tolist()
+    final_state_id = "0" + "".join([str(aa) for aa in key])
     # Track the visited and unvisited nodes using queue
     # nodes = MAKE-QUEUE(MAKE-NODE(problem.INITIAL-STATE))
     # seen, queue = startnode, deque(startnode)
@@ -183,29 +178,33 @@ def bfs(startnode):
         graph[node.id].append(node.prev)
         # • GOAL-TEST
         # 	– Test if state satisfies all goal conditions
-        if np.array_equal(node.state, final_state):
+        # if np.array_equal(node.state, final_state):
+        if node.id == final_state_id:
             return node, graph
         # nodes = QUEUEING-FUNCTION(nodes, EXPAND(node,
         #         problem.OPERATORS))
         successor_nodes = queue.extend(expand(node))
         SEEN.add(node.id)
 
+    print("FAILURE")
+
 
 def expand(node):
     # get row that elevator is stopped on
     # elevator is column 0
-    e_col = node.state[:, 0]
-    idx = [i for i, v in enumerate(e_col) if v > 0]
+    # e_col = node.state[:, 0]
+    # idx = [i for i, v in enumerate(e_col) if v > 0]
+    idx = node.floor
 
     # extract elevator row
     current_floor = node.state[idx]
 
     # find the indexes for columns with devices
-    xx = [i + 1 for i, v in enumerate(current_floor[0, 1:]) if v > 0]
-    move_one_device = [(0, v) for i, v in enumerate(xx) if v > 0]
+    xx = [i for i, v in enumerate(current_floor) if v > 0]
+    move_one_device = [(-1, v) for i, v in enumerate(xx) if v > 0]
     move_two_devices = [x for x in (combinations(xx, 2))]
     move_devices = move_one_device + move_two_devices
-    return create_new_states(node, idx[0], move_devices)
+    return create_new_states(node, idx, move_devices)
 
 
 def create_new_states(old_node, cf, opts):
@@ -222,30 +221,31 @@ def create_new_states(old_node, cf, opts):
         item1, item2 = i
         if cf + 1 != r:  # form dn state
             ns_dn = np.copy(old_node.state)
-            if item1 != 0:
+            if item1 != -1:
                 ns_dn[cf, item1], ns_dn[cf + 1, item1] = (
                     ns_dn[cf + 1, item1],
                     ns_dn[cf, item1],
                 )
-            if item2 != 0:
+            if item2 != -1:
                 ns_dn[cf, item2], ns_dn[cf + 1, item2] = (
                     ns_dn[cf + 1, item2],
                     ns_dn[cf, item2],
                 )
-            ns_dn[cf, 0], ns_dn[cf + 1, 0] = (
-                ns_dn[cf + 1, 0],
-                ns_dn[cf, 0],
-            )  # swap floor
+            new_floor = cf + 1
+            # ns_dn[cf, 0], ns_dn[cf + 1, 0] = (
+            #     ns_dn[cf + 1, 0],
+            #     ns_dn[cf, 0],
+            # )  # swap floor
             if validate_state(ns_dn):
                 dprint(f"down {i}\n {ns_dn}")
                 key = ns_dn.flatten().tolist()
-                id = "".join([str(aa) for aa in key])
-                n_node = Node(ns_dn, id, old_node.id)
+                id = str(new_floor) + "".join([str(aa) for aa in key])
+                n_node = Node(ns_dn, new_floor, id, old_node.id)
                 new_nodes.append(n_node)
 
         if cf != 0:
             ns_up = np.copy(old_node.state)
-            if item1 != 0:
+            if item1 != -1:
                 ns_up[cf, item1], ns_up[cf - 1, item1] = (
                     ns_up[cf - 1, item1],
                     ns_up[cf, item1],
@@ -255,15 +255,16 @@ def create_new_states(old_node, cf, opts):
                     ns_up[cf - 1, item2],
                     ns_up[cf, item2],
                 )
-            ns_up[cf, 0], ns_up[cf - 1, 0] = (
-                ns_up[cf - 1, 0],
-                ns_up[cf, 0],
-            )  # swap floor
+            new_floor = cf - 1
+            # ns_up[cf, 0], ns_up[cf - 1, 0] = (
+            #     ns_up[cf - 1, 0],
+            #     ns_up[cf, 0],
+            # )  # swap floor
             if validate_state(ns_up):
                 dprint(f"up {i}\n {ns_up}")
                 key = ns_up.flatten().tolist()
-                id = "".join([str(aa) for aa in key])
-                n_node = Node(ns_up, id, old_node.id)
+                id = str(new_floor) + "".join([str(aa) for aa in key])
+                n_node = Node(ns_up, new_floor, id, old_node.id)
                 new_nodes.append(n_node)
 
         dprint("creating new nodes", new_nodes)
@@ -280,7 +281,7 @@ def marked(n):
 
 def main():
 
-    with open("11_2.in") as fp:
+    with open("11s.in") as fp:
         lines = [line.strip() for line in fp]
     # print("=========", lines)
     initial_node = process_input(lines)
