@@ -5,7 +5,8 @@ from dataclasses import dataclass
 from itertools import combinations
 from typing import Any
 import numpy as np
-import graph
+
+# import graph
 
 """
 --- Day 11: Radioisotope Thermoelectric Generators ---
@@ -114,7 +115,7 @@ def process_input(lines, part=1):
     key = initial_state.flatten().tolist()
     id = "".join([str(aa) for aa in key])
     init_node = Node(initial_state, id, "start")
-    print(init_node)
+    dprint(init_node)
     print(init_node.state)
 
     # z = np.copy(init_node.state)
@@ -166,6 +167,7 @@ def bfs(startnode):
     # seen = set(startnode)
     # SEEN.add(startnode.id)
     queue = deque([startnode])
+    graph = defaultdict(list)
 
     # if EMPTY(nodes) then return "failure"
     while queue:
@@ -174,14 +176,15 @@ def bfs(startnode):
         dprint(">>>>>>>>>>>>>", node.id)
         if node.id in SEEN:
             continue
-        print("================", node.id, node.prev)
+        dprint("================", node.id, node.prev)
         # print(node.id)
         # print("================")
         marked(node)
+        graph[node.id].append(node.prev)
         # • GOAL-TEST
         # 	– Test if state satisfies all goal conditions
         if np.array_equal(node.state, final_state):
-            return node
+            return node, graph
         # nodes = QUEUEING-FUNCTION(nodes, EXPAND(node,
         #         problem.OPERATORS))
         successor_nodes = queue.extend(expand(node))
@@ -277,14 +280,24 @@ def marked(n):
 
 def main():
 
-    with open("11s.in") as fp:
+    with open("11.in") as fp:
         lines = [line.strip() for line in fp]
     # print("=========", lines)
     initial_node = process_input(lines)
-    bfs(initial_node)
+    n, g = bfs(initial_node)
     # process_input(lines, part2, "part 2")
     # print(SEEN)
+    # for i, v in g.items():
+    #     print(i, v)
 
+    s = n.id
+    cnt = 0
+    while s != "start":
+        next = g[s]
+        next = next[0]
+        print(cnt, next)
+        s = next
+        cnt += 1
     return
 
 
