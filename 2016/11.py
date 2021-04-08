@@ -2,9 +2,12 @@ import re
 import sys
 from collections import namedtuple, defaultdict, deque
 from dataclasses import dataclass
-from itertools import combinations
-from typing import Any
+from itertools import combinations, chain
+from typing import Any, List, Set, Dict, Tuple, Optional
 import numpy as np
+import time
+import pprint
+
 
 # import graph
 
@@ -15,7 +18,7 @@ chip fried if left by other RTG if not powered by it's own RTG
 keep chips connected to their corresponding RTG when
     they're in the same room, and away from other RTGs otherwise
 
-elevator:
+elevator:g
 capacity: 2 RTGS or microchips in any combination
 only functions if it has at least one RTG or chip
 always stops on each floor
@@ -28,7 +31,8 @@ always stops on each floor
 class Node:
     state: any
     floor: int
-    id: str
+    distance: int
+    # id: str
     prev: any
 
 
@@ -66,80 +70,126 @@ def process_input(lines, part=1):
     item_dict = defaultdict(int)
     # floor value is the array row value  3 = is the first floor out of 4 floors
     floor = {"first": 3, "second": 2, "third": 1, "fourth": 0}
-    floor_idx = {3: "F1", 2: "F2", 1: "F3", 0: "F4"}
-    for line in lines:
+    # floor = range(4)
+    # floor_idx = {3: "F1", 2: "F2", 1: "F3", 0: "F4"}
+    for fl, line in enumerate(lines):
         items = re.findall(r"([-\w]* microchip|[-\w]* generator)", line)
         floor_no = floor[line.split()[1]]
-        FLOORS.append(line.split()[1])
-        ITEMS.extend(items)
-        items_abbr = [
-            (i.split()[0][0:2] + "_" + i.split()[1][0]).upper() for i in items
-        ]
-        ITEMS_ABBR.extend(items_abbr)
-        dprint(floor_no, items)
-        floor_dict[floor_no] = items_abbr
-        dprint(floor_no, items_abbr)
+        for k in items:
+            item_dict[k] = int(fl)
+        # item_dict = {k: int(fl) for k in items}
+        dprint("item_dict", len(item_dict))
+        for i, v in item_dict.items():
+            dprint(i, v)
+        dprint("=========")
 
-    # dprint(ITEMS)
-    dprint("=========")
-    dprint("floor_dict", len(floor_dict))
-    for i, v in floor_dict.items():
-        dprint(i, v)
-    dprint("=========")
-    # dprint(sorted(ITEMS_ABBR))
-    for i, v in enumerate(sorted(ITEMS_ABBR)):
-        item_dict[v] = i
-    dprint("=========")
-    dprint("item_dict", len(item_dict))
-    for i, v in item_dict.items():
-        dprint(i, v)
-    dprint("=========")
+    """
+    item_dict contains all the sorted elements and which floor
+    they started at:
 
-    initial_state = np.zeros((len(floor_dict), len(item_dict)), dtype=np.int8)
+    cobalt generator 0
+    cobalt-compatible microchip 0
+    polonium generator 0
+    polonium-compatible microchip 1
+    promethium generator 0
+    promethium-compatible microchip 1
+    ruthenium generator 0
+    ruthenium-compatible microchip 0
+    thulium generator 0
+    thulium-compatible microchip 0
 
-    # build the state
-    # column 0,2,4... = Generator
-    # column 1,3,5 = matching microchip
-    for i, v in floor_dict.items():
-        for j in v:
-            initial_state[i, item_dict[j]] = 1
-    starting_floor = 3  # set starting elevator floor
-    dprint(initial_state)
-    key = initial_state.flatten().tolist()
-    id = str(starting_floor) + "".join([str(aa) for aa in key])
-    init_node = Node(initial_state, starting_floor, id, "start")
+    from it we create a list of the items floor positions
+    (Pdb) items
+    [0, 0, 0, 1, 0, 1, 0, 0, 0, 0]
+    |    |= is a generator microchip pair
+
+    they are then joined as Tuple pairs
+    (Pdb) pairs
+    ((0, 0), (0, 1), (0, 1), (0, 0), (0, 0))
+      |  |
+      G  M
+
+    """
+
+    dprint("===ALL*======")
+    for k in sorted(item_dict.keys()):
+        dprint(k, item_dict[k])
+
+    items = [item_dict[k] for k in sorted(item_dict.keys())]
+    print("items", items)
+
+    pairs = tuple((items[i], items[i + 1]) for i in range(0, len(items), 2))
+    print("pairs", pairs)
+
+    # =========================================
+    # dump the state
+    floors = [[], [], [], []]
+    for element, (x, y) in enumerate(pairs):
+        floors[x].append((element, 0))  # (element_index, type)
+        floors[y].append((element, 1))
+
+    dprint("=== floors ===")
+    for f in floors:
+        dprint(f)
+
+    dprint("=== floors 2 ===")
+    dprint(floors)
+    # =========================================
+
+    starting_floor = 0  # set starting elevator floor
+    initial_state = tuple(sorted(pairs))
+
+    init_node = Node(initial_state, starting_floor, 0, "start")
     dprint(init_node)
     print(init_node.state)
-
-    # z = np.copy(init_node.state)
-    # print(init_node.state, validate_state(init_node.state))
-    # z[1, 2] = 1
-    # print(z, validate_state(z))
 
     return init_node
 
 
-def validate_state(state):
+def validate_state(floors: List[List[Tuple[int, int]]]) -> bool:
     """
+
     determine if any microchip is unprotected with another generator present
     must validate protected chip
     if unprotected chip and there is at least one Generator then it is invalid
     - ergo: if unprotected the generator is not its mate
+
+    # state check:
+    # if the item type is 1 (microchip) and the
+    # corresponding generator (type 0)  is not
+    # on the same floor (same element_index ) and there are any other generators
+    # then the chip is fried and this is not a valid state
+
+    # this is what the floors variable represents extracted rows
+    floors = [[], [], [], []]
+    # dump the state
+    for element, (x, y) in enumerate(state):
+        floors[x].append((element, 0))  # (element_index, type)
+        floors[y].append((element, 1))
+
     """
-    for row in state:
-        gen = row[0::2]
-        # print(gen)
-        g = np.sum(gen)  # finds the number of generators
-        mc = row[1::2]
-        # print(mc)
-        m = np.sum(mc)
+
+    for row in floors:
+        mc = [e for e, x in row if x == 1]
+        gen = [e for e, x in row if x == 0]
+        unprotected = [mc for i in mc if i not in gen]
         # print(f"Gen = {g} Microchip {m}")
-        for i in range(len(mc)):
-            if mc[i] > gen[i] and g > 0:
-                # print("unprotected")
-                # print("fried chip")
-                return False
+        # for any items not protected and if any generators
+        # then the microchip is fried
+        if unprotected and gen:
+            dprint(row)
+            return False
     return True
+
+
+def create_floors(state):
+    # extract elevator row
+    floors = [[], [], [], []]
+    # dump the state
+    for element, (x, y) in enumerate(state):
+        floors[x].append((element, 0))  # (element_index, type)
+        floors[y].append((element, 1))
+    return floors
 
 
 """
@@ -151,11 +201,7 @@ State-space search algorithm
 
 #  function general-search (problem, QUEUEING-FUNCTION)
 def bfs(startnode):
-    r, c = startnode.state.shape
-    final_state = np.zeros((r, c), dtype=np.int8)
-    final_state[0] = 1  # set top floor to all ones
-    key = final_state.flatten().tolist()
-    final_state_id = "0" + "".join([str(aa) for aa in key])
+    final_state = tuple((3, 3) for j, _ in startnode.state)
     # Track the visited and unvisited nodes using queue
     # nodes = MAKE-QUEUE(MAKE-NODE(problem.INITIAL-STATE))
     # seen, queue = startnode, deque(startnode)
@@ -168,110 +214,84 @@ def bfs(startnode):
     while queue:
         # node = REMOVE-FRONT(nodes)
         node = queue.popleft()
-        dprint(">>>>>>>>>>>>>", node.id)
-        if node.id in SEEN:
+        dprint("================", node.state, node.floor, node.prev)
+
+        # extract elevator row
+        floors = [[], [], [], []]
+        # dump the state
+        for element, (x, y) in enumerate(node.state):
+            floors[x].append((element, 0))  # (element_index, type)
+            floors[y].append((element, 1))
+
+        if not validate_state(floors):
+            dprint("INVALID", node.state)
             continue
-        dprint("================", node.id, node.prev)
-        # print(node.id)
+
+        if (node.distance, node.state, node.floor) in SEEN:
+            continue
         # print("================")
+
         marked(node)
-        graph[node.id].append(node.prev)
+        graph[node.state].append(node.prev)
+
         # • GOAL-TEST
         # 	– Test if state satisfies all goal conditions
         # if np.array_equal(node.state, final_state):
-        if node.id == final_state_id:
+        # print(node.state, final_state)
+        if node.state == final_state:
             return node, graph
+
         # nodes = QUEUEING-FUNCTION(nodes, EXPAND(node,
         #         problem.OPERATORS))
-        successor_nodes = queue.extend(expand(node))
-        SEEN.add(node.id)
+        x = expand(node, floors)
+        successor_nodes = queue.extend(x)
+
+        SEEN.add((node.distance, node.state, node.floor))
 
     print("FAILURE")
 
 
-def expand(node):
-    # get row that elevator is stopped on
-    # elevator is column 0
-    # e_col = node.state[:, 0]
-    # idx = [i for i, v in enumerate(e_col) if v > 0]
-    idx = node.floor
-
-    # extract elevator row
-    current_floor = node.state[idx]
-
-    # find the indexes for columns with devices
-    xx = [i for i, v in enumerate(current_floor) if v > 0]
-    move_one_device = [(-1, v) for i, v in enumerate(xx) if v > 0]
-    move_two_devices = [x for x in (combinations(xx, 2))]
-    move_devices = move_one_device + move_two_devices
-    return create_new_states(node, idx, move_devices)
-
-
-def create_new_states(old_node, cf, opts):
-    # cf = current_floor
-    # opts is the number of options in a list
-    #  [(0, 2), (0, 4), (2, 4)]
+# @entryExit
+def expand(node, floors: List[List[Tuple[int, int]]]):
     new_nodes = []
-    r, c = old_node.state.shape
-    # if not at the top row create an up state
-    for i in opts:
-        ns = np.copy(old_node.state)
-        dprint(f"items moving {i} current_floor:{cf}  r:{r}")
-        dprint(f"opts {opts}")
-        item1, item2 = i
-        if cf + 1 != r:  # form dn state
-            ns_dn = np.copy(old_node.state)
-            if item1 != -1:
-                ns_dn[cf, item1], ns_dn[cf + 1, item1] = (
-                    ns_dn[cf + 1, item1],
-                    ns_dn[cf, item1],
-                )
-            if item2 != -1:
-                ns_dn[cf, item2], ns_dn[cf + 1, item2] = (
-                    ns_dn[cf + 1, item2],
-                    ns_dn[cf, item2],
-                )
-            new_floor = cf + 1
-            # ns_dn[cf, 0], ns_dn[cf + 1, 0] = (
-            #     ns_dn[cf + 1, 0],
-            #     ns_dn[cf, 0],
-            # )  # swap floor
-            if validate_state(ns_dn):
-                dprint(f"down {i}\n {ns_dn}")
-                key = ns_dn.flatten().tolist()
-                id = str(new_floor) + "".join([str(aa) for aa in key])
-                n_node = Node(ns_dn, new_floor, id, old_node.id)
-                new_nodes.append(n_node)
+    floor = node.floor
+    pairs = node.state
+    dprint(">>> Node:", node)
+    # clever algorithm
+    # calculates whether adjusting the floors up(+1) or down (-1)
+    # find the threshold of the floor
+    #   floor = 3
+    #   {min(floor + 1, 3), max(floor - 1, 0)}
+    #       {2, 3}
+    # since the floor current_floor is 3 then 3 will be removed
+    # by the ....     - set([floor])
+    # that way only options for up direction will be created
 
-        if cf != 0:
-            ns_up = np.copy(old_node.state)
-            if item1 != -1:
-                ns_up[cf, item1], ns_up[cf - 1, item1] = (
-                    ns_up[cf - 1, item1],
-                    ns_up[cf, item1],
-                )
-            if item2 != 0:
-                ns_up[cf, item2], ns_up[cf - 1, item2] = (
-                    ns_up[cf - 1, item2],
-                    ns_up[cf, item2],
-                )
-            new_floor = cf - 1
-            # ns_up[cf, 0], ns_up[cf - 1, 0] = (
-            #     ns_up[cf - 1, 0],
-            #     ns_up[cf, 0],
-            # )  # swap floor
-            if validate_state(ns_up):
-                dprint(f"up {i}\n {ns_up}")
-                key = ns_up.flatten().tolist()
-                id = str(new_floor) + "".join([str(aa) for aa in key])
-                n_node = Node(ns_up, new_floor, id, old_node.id)
-                new_nodes.append(n_node)
+    # candidates = chain(floors[floor], combinations(floors[floor], 2))
 
-        dprint("creating new nodes", new_nodes)
+    for floorx in {min(floor + 1, 3), max(floor - 1, 0)} - set([floor]):
+        dprint(">>> Floors:", floorx, floors[floor])
+        # pprint.pprint(floors)
+        dprint(pairs)
+        for i, things in enumerate(
+            chain(map(lambda x: [x], floors[floor]), combinations(floors[floor], 2))
+        ):
+            dprint("Things", i, things, type(things))
+            # convert pairs to list of lists
+            x = [[g, m] for g, m in pairs]
+            for thing in things:
+                dprint(i, thing)
+                i, e = thing
+                x[i][e] = floorx
+            # convert new pairs to tuple
+            new_pairs = tuple(tuple(z) for z in x)
+            new_nodes.append(
+                Node(tuple(sorted(new_pairs)), floorx, node.distance + 1, node.state)
+            )
+            dprint("new_pairs", new_pairs)
+            # pprint.pprint(new_nodes)
 
     return new_nodes
-
-    # if r != 0:
 
 
 def marked(n):
@@ -280,8 +300,9 @@ def marked(n):
 
 
 def main():
-
-    with open("11s.in") as fp:
+    start = time.time()
+    print("Start Timer")
+    with open("11_2.in") as fp:
         lines = [line.strip() for line in fp]
     # print("=========", lines)
     initial_node = process_input(lines)
@@ -291,14 +312,27 @@ def main():
     # for i, v in g.items():
     #     print(i, v)
 
+    print(f"Distance: {n.distance}")
+    end = time.time()
+    print(end - start)
+
+    return
+
+    def p_id(id):
+        print(f"Floor {id[0]}")
+        for i in range(4):
+            print(id[(i * 4) + 1 : (i * 4) + 5])
+
     s = n.id
     cnt = 0
     while s != "start":
+        p_id(s)
         next = g[s]
         next = next[0]
         print(cnt, next)
         s = next
         cnt += 1
+
     return
 
 
