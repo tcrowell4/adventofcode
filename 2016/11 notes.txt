@@ -28,6 +28,9 @@ todo:
 	and there is at least on generator 
 	then 
 		the array is invalid
+	Exception: must validate protected chip
+	 if unprotected chip and there is at least one Generator then it is invalid
+		- ergo: if unprotected the generator is not its mate
 
 # sample random values 		
 >>> x
@@ -41,11 +44,50 @@ array([33,  1], dtype=int8)
 >>> x[0,2::2]
 array([34,  3], dtype=int8)
 
+>>> for row in x:
+...     gen = row[1::2]
+...     print(gen)
+...     g = np.sum(gen)         #finds the number of generators
+...     mc = row[2::2]
+...     print(mc)
+...     m = np.sum(mc)
+...     print(f'Gen = {g} Microchip {m}')
+...     for i in range(len(mc)):
+...         if mc[i] == 1:
+...             if gen[i] == 1:
+...                 print('chip protected')
+...             else:
+...                 print('unprotected')
+...                 if g>0: print('fried chip')
+...
+[33  1]
+[34  3]
+Gen = 34 Microchip 37
+[1 0]
+[0 1]
+Gen = 1 Microchip 1
+unprotected
+fried chip
+[5 0]
+[4 0]
+Gen = 5 Microchip 4
+[4 0]
+[5 0]
+Gen = 4 Microchip 5
+>>> x
+array([[ 1, 33, 34,  1,  3],
+       [ 0,  1,  0,  0,  1],                #<= unprotected microchip
+       [ 0,  5,  4,  0,  0],
+       [ 0,  4,  5,  0,  0]], dtype=int8)
+>>>
+               		
+
 for row in x:
     print(row[1::2])
-	g = np.sum(row[1::2])
+    g = np.sum(row[1::2])			#finds the number of generators
     print(row[2::2])
-	m = np.sum(row[2::2])
+    m = np.sum(row[2::2])
+    print(f'Gen = {g} Microchip {m}')	
 
 [33  1]
 [34  3]
@@ -61,3 +103,43 @@ for row in A:
     for cell in row:
         print(cell, end=' ')
 	print('\n')
+	
+3:  Expand nodes
+	- floor can be up or down  1 or -1
+	- then 1 or 2 device combinations for all
+	extract row into a list
+	
+>>> x
+array([[1, 1, 1, 1, 1],
+       [0, 1, 0, 0, 1],
+       [0, 5, 4, 0, 0],
+       [0, 4, 5, 0, 0]], dtype=int8)
+
+
+>>> x[3,0] = 1
+>>> x
+array([[0, 1, 1, 1, 1],
+       [0, 1, 0, 0, 1],
+       [0, 5, 4, 0, 0],
+       [1, 4, 5, 0, 0]], dtype=int8)
+
+find the current floor with the elevator col = 0
+get column 0
+>>> gg= x[:,0]
+>>> gg
+array([0, 0, 0, 1], dtype=int8)
+>>> [i for i,v in enumerate(gg) if v>0]
+[3]
+
+>>> abc = (i for i,v in enumerate(gg) if v>0)
+>>> next(abc)
+3
+
+This find all of the columns that have a device
+>>> xx = [i+1 for i,v in enumerate(x[0,1:]) if v > 0]
+
+This list itself represents the list to use of only one device move
+>>> xx
+[1, 2, 3, 4]
+>>> list(combinations(xx,2))
+[(1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)]
