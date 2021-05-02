@@ -1,0 +1,145 @@
+• Two jugs J1 & J2 with capacity C1 & C2
+• Initially J1 has W1 water and J2 has W2 water
+	– e.g.: full 5 gallon jug and empty 2 gallon jug
+• Possible actions:
+	– Pour from jug X to jug Y until X empty or Y full
+	– Empty jug X onto the floor
+• Goal: J1 has G1 water and J2 G2
+	– G1 or G2 can be -1 to represent any amount
+• E.g.: initially full jugs with capacities 3 and 1
+liters, goal is to have 1 liter in each
+
+So…
+• How can we represent the states?
+• What an initial state
+• How do we recognize a goal state
+• What are the actions; how can we tell which
+ones can be performed in a given state; what
+is the resulting state
+• How do we search for a solution from an
+initial state given a goal state
+• What is a solution? The goal state achieved or
+a path to it?
+
+Search in a state space
+• Basic idea:
+	–Create representation of initial state
+	–Try all possible actions & connect states that result
+	–Recursively apply process to the new states until we
+	find a solution or dead ends
+• We need to keep track of the connections
+between states and might use a
+–Tree data structure or
+–Graph data structure
+• A graph structure is best in general…
+
+Search in a state space
+
+Consider a water jug problem with a 3-liter and 1-liter jug, an
+initial state of (3,1) and a goal stage of (1,1)
+
+
+
+
+Formalizing state space search
+• A state space is a graph (V, E) where V is a set
+of nodes and E is a set of arcs, and each arc is
+directed from a node to another node
+• Nodes: data structures with state description
+and other info, e.g., node’s parent, name of
+action that generated it from parent, etc.
+• Arcs: instances of actions, head is a state, tail
+is the state that results from act
+
+Formalizing search in a state space
+• Each arc has fixed, positive cost associated
+with it corresponding to the action cost
+	– Simple case: all costs are 1
+• Each node has a set of successor nodes
+corresponding to all legal actions that can be
+applied at node’s state
+	– Expanding a node = generating its successor nodes and adding them and their associated arcs to the graph
+• One or more nodes are marked as start nodes
+• A goal test predicate is applied to a state to
+determine if its associated node is a goal node
+
+Formalizing search in a state space
+• Each arc has fixed, positive cost associated
+with it corresponding to the action cost
+	– Simple case: all costs are 1
+• Each node has a set of successor nodes
+corresponding to all legal actions that can be
+applied at node’s state
+	– Expanding a node = generating its successor
+	nodes and adding them and their associated
+	arcs to the graph
+• One or more nodes are marked as start nodes
+• A goal test predicate is applied to a state to
+determine if its associated node is a goal node
+
+Example: Water Jug Problem
+Given full 5-gal. jug
+and empty 2-gal. jug,
+fill 2-gal jug with one
+gallon
+•State = (x,y), where x is
+water in jug 1; y is water
+in jug 2
+•Initial State = (5,0)
+•Goal State = (-1,1), where
+-1 means any amount
+
+
+
+Formalizing search
+• Solution: sequence of actions associated with
+a path from a start node to a goal node
+• Solution cost: sum of the arc costs on the
+solution path
+	– If all arcs have same (unit) cost, then
+	solution cost is length of solution (number
+	of steps)
+	– Algorithms generally require that arc costs
+	cannot be negative (why?)
+
+Formalizing search
+• State-space search: searching through state space for
+solution by making explicit a portion of an implicit
+state-space graph to find a goal node
+	– Can’t materializing whole space for large problems
+	– Initially V={S}, where S is the start node, E={}
+	– On expanding S, its successor nodes are generated and added to V and associated arcs added to E
+	– Process continues until a goal node is found
+• Nodes represent a partial solution path (+ cost of
+partial solution path) from S to the node
+	– From a node there may be many possible paths (and thus
+	solutions) with this partial path as a prefix
+
+State-space search algorithm
+;; problem describes the start state, operators, goal test, and operator costs
+;; queueing-function is a comparator function that ranks two states
+;; general-search returns either a goal node or failure
+function general-search (problem, QUEUEING-FUNCTION)
+	nodes = MAKE-QUEUE(MAKE-NODE(problem.INITIAL-STATE))
+	loop
+	if EMPTY(nodes) then return "failure"
+		node = REMOVE-FRONT(nodes)
+		if problem.GOAL-TEST(node.STATE) succeeds
+			then return node
+		nodes = QUEUEING-FUNCTION(nodes, EXPAND(node,
+			problem.OPERATORS))
+	end
+;; Note: The goal test is NOT done when nodes are generated
+;; Note: This algorithm does not detect loops
+
+Key procedures to be defined
+• EXPAND
+	– Generate a node’s successor nodes, adding
+	them to the graph if not already there
+• GOAL-TEST
+	– Test if state satisfies all goal conditions
+•QUEUEING-FUNCTION
+	– Maintain ranked list of nodes that are
+	candidates for expansion
+	– Changing definition of the QUEUEING-FUNCTION
+	leads to different search strategies
